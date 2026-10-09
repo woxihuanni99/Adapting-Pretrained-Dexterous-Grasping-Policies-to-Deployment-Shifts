@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the manuscript below."
+title: "Adapting Pretrained Dexterous Grasping Policies to Deployment Shifts: An Empirical Study of Update Parameterization and Recovery-Retention Trade-offs"
+type: software
+authors:
+  - family-names: Lan
+    given-names: Haoze
+license: MIT
+repository-code: "https://github.com/woxihuanni99/Adapting-Pretrained-Dexterous-Grasping-Policies-to-Deployment-Shifts"
+date-released: 2026-10-09
+keywords:
+  - dexterous grasping
+  - reinforcement learning
+  - policy fine-tuning
+  - residual policies
+  - deployment shift

@@ -1,0 +1,45 @@
+{
+ "eval_seed": 4242,
+ "models": {
+  "full_grpo": {
+   "lr": "1e-5",
+   "tags": [
+    "sx_RFLF_fg_1em5_s1",
+    "sx_RFLF_fg_1em5_s2",
+    "sx_RFLF_fg_1em5_s3",
+    "sx_RFLF_fg_1em5_s4",
+    "sx_RFLF_fg_1em5_s5"
+   ]
+  },
+  "full_ppo": {
+   "lr": "1e-5",
+   "tags": [
+    "sx_RFLF_fp_1em5_s1",
+    "sx_RFLF_fp_1em5_s2",
+    "sx_RFLF_fp_1em5_s3",
+    "sx_RFLF_fp_1em5_s4",
+    "sx_RFLF_fp_1em5_s5"
+   ]
+  },
+  "res_ppo": {
+   "lr": "3e-3",
+   "tags": [
+    "sx_RFLF_rp_3em3_s1",
+    "sx_RFLF_rp_3em3_s2",
+    "sx_RFLF_rp_3em3_s3",
+    "sx_RFLF_rp_3em3_s4",
+    "sx_RFLF_rp_3em3_s5"
+   ]
+  },
+  "res_grpo": {
+   "lr": "1e-3",
+   "tags": [
+    "sx_RFLF_rg_1em3_s1",
+    "sx_RFLF_rg_1em3_s2",
+    "sx_RFLF_rg_1em3_s3",
+    "sx_RFLF_rg_1em3_s4",
+    "sx_RFLF_rg_1em3_s5"
+   ]
+  }
+ }
+}

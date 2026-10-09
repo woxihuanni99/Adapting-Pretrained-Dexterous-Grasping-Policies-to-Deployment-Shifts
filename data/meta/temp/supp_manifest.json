@@ -1,0 +1,324 @@
+{
+ "eval_seed": 4242,
+ "S1_d10": {
+  "full_grpo": {
+   "lr": "3e-5",
+   "LF": [
+    "grpo_shlockLF_lr3s1",
+    "grpo_shlockLF_lr3s2",
+    "grpo_shlockLF_lr3s3"
+   ],
+   "PCL": [
+    "grpo_pcl1cm_lr3_s1",
+    "grpo_pcl1cm_lr3_s2",
+    "grpo_pcl1cm_lr3_s3"
+   ]
+  },
+  "full_ppo": {
+   "lr": "3e-5",
+   "LF": [
+    "ppoft_shlockLF_s1",
+    "ppoft_shlockLF_s2",
+    "ppoft_shlockLF_s3",
+    "ppoft_shlockLF_s4",
+    "ppoft_shlockLF_s5"
+   ],
+   "PCL": [
+    "ppoftpcl_s1",
+    "ppoftpcl_s2",
+    "ppoftpcl_s3",
+    "ppoftpcl_s4",
+    "ppoftpcl_s5"
+   ]
+  },
+  "res_ppo": {
+   "lr": "3e-3",
+   "note": "same as main or none"
+  },
+  "res_grpo": {
+   "lr": "3e-3",
+   "LF": [
+    "pluggrpo_shlockLF_lr3e3_s1",
+    "pluggrpo_shlockLF_lr3e3_s2",
+    "pluggrpo_shlockLF_lr3e3_s3",
+    "pluggrpo_shlockLF_lr3e3_s4",
+    "pluggrpo_shlockLF_lr3e3_s5"
+   ],
+   "PCL": [
+    "pluggrpo_pcl1cm_lr3e3_s1",
+    "pluggrpo_pcl1cm_lr3e3_s2",
+    "pluggrpo_pcl1cm_lr3e3_s3",
+    "pluggrpo_pcl1cm_lr3e3_s4",
+    "pluggrpo_pcl1cm_lr3e3_s5"
+   ]
+  }
+ },
+ "S2_LF75train": {
+  "full_grpo": {
+   "lr": "1e-5",
+   "models": [
+    "sx_LF75_fg_1em5_s1",
+    "sx_LF75_fg_1em5_s2",
+    "sx_LF75_fg_1em5_s3"
+   ]
+  },
+  "full_ppo": {
+   "lr": "1e-5",
+   "models": [
+    "sx_LF75_fp_1em5_s1",
+    "sx_LF75_fp_1em5_s2",
+    "sx_LF75_fp_1em5_s3"
+   ]
+  },
+  "res_ppo": {
+   "lr": "3e-3",
+   "models": [
+    "sx_LF75_rp_3em3_s1",
+    "sx_LF75_rp_3em3_s2",
+    "sx_LF75_rp_3em3_s3"
+   ]
+  },
+  "res_grpo": {
+   "lr": "1e-3",
+   "models": [
+    "sx_LF75_rg_1em3_s1",
+    "sx_LF75_rg_1em3_s2",
+    "sx_LF75_rg_1em3_s3"
+   ]
+  }
+ },
+ "S3_lrcurve": {
+  "full_grpo": {
+   "1e-5": {
+    "LF": [
+     "grpo_shlockLF_s1",
+     "grpo_shlockLF_s2",
+     "grpo_shlockLF_s3"
+    ],
+    "PCL": [
+     "grpo_pcl1cm_v3",
+     "grpo_pcl1cm_v3s2",
+     "grpo_pcl1cm_v3s3"
+    ]
+   },
+   "3e-5": {
+    "LF": [
+     "grpo_shlockLF_lr3s1",
+     "grpo_shlockLF_lr3s2",
+     "grpo_shlockLF_lr3s3"
+    ],
+    "PCL": [
+     "grpo_pcl1cm_lr3_s1",
+     "grpo_pcl1cm_lr3_s2",
+     "grpo_pcl1cm_lr3_s3"
+    ]
+   },
+   "1e-4": {
+    "LF": [
+     "grpo_shlockLF_lr10_s1",
+     "grpo_shlockLF_lr10_s2",
+     "grpo_shlockLF_lr10_s3"
+    ],
+    "PCL": [
+     "grpo_pcl1cm_lr10_s1",
+     "grpo_pcl1cm_lr10_s2",
+     "grpo_pcl1cm_lr10_s3"
+    ]
+   }
+  },
+  "full_ppo": {
+   "1e-5": {
+    "LF": [
+     "ppoft_shlockLF_lr1_s1",
+     "ppoft_shlockLF_lr1_s2",
+     "ppoft_shlockLF_lr1_s3"
+    ],
+    "PCL": [
+     "ppoft_pcl1cm_lr1_s1",
+     "ppoft_pcl1cm_lr1_s2",
+     "ppoft_pcl1cm_lr1_s3"
+    ]
+   },
+   "3e-5": {
+    "LF": [
+     "ppoft_shlockLF_s1",
+     "ppoft_shlockLF_s2",
+     "ppoft_shlockLF_s3",
+     "ppoft_shlockLF_s4",
+     "ppoft_shlockLF_s5"
+    ],
+    "PCL": [
+     "ppoftpcl_s1",
+     "ppoftpcl_s2",
+     "ppoftpcl_s3",
+     "ppoftpcl_s4",
+     "ppoftpcl_s5"
+    ]
+   },
+   "1e-4": {
+    "LF": [
+     "ppoft_shlockLF_lr10_s1",
+     "ppoft_shlockLF_lr10_s2",
+     "ppoft_shlockLF_lr10_s3"
+    ],
+    "PCL": [
+     "ppoft_pcl1cm_lr10_s1",
+     "ppoft_pcl1cm_lr10_s2",
+     "ppoft_pcl1cm_lr10_s3"
+    ]
+   }
+  },
+  "res_ppo": {
+   "1e-4": {
+    "LF": [
+     "plugppo_shlockLF_lr1e4_s1",
+     "plugppo_shlockLF_lr1e4_s2",
+     "plugppo_shlockLF_lr1e4_s3"
+    ],
+    "PCL": [
+     "plugppo_pcl1cm_lr1e4_s1",
+     "plugppo_pcl1cm_lr1e4_s2",
+     "plugppo_pcl1cm_lr1e4_s3"
+    ]
+   },
+   "3e-4": {
+    "LF": [
+     "plugppo_shlockLF_s1",
+     "plugppo_shlockLF_s2",
+     "plugppo_shlockLF_s3"
+    ],
+    "PCL": [
+     "plugppo_pcl1cm_s1",
+     "plugppo_pcl1cm_s2",
+     "plugppo_pcl1cm_s3"
+    ]
+   },
+   "1e-3": {
+    "LF": [
+     "plugppo_shlockLF_lr1e3_s1",
+     "plugppo_shlockLF_lr1e3_s2",
+     "plugppo_shlockLF_lr1e3_s3"
+    ],
+    "PCL": [
+     "plugppo_pcl1cm_lr1e3_s1",
+     "plugppo_pcl1cm_lr1e3_s2",
+     "plugppo_pcl1cm_lr1e3_s3"
+    ]
+   },
+   "3e-3": {
+    "LF": [
+     "plugppo_shlockLF_lr3e3_s1",
+     "plugppo_shlockLF_lr3e3_s2",
+     "plugppo_shlockLF_lr3e3_s3",
+     "plugppo_shlockLF_lr3e3_s4",
+     "plugppo_shlockLF_lr3e3_s5"
+    ],
+    "PCL": [
+     "plugppo_pcl1cm_lr3e3_s1",
+     "plugppo_pcl1cm_lr3e3_s2",
+     "plugppo_pcl1cm_lr3e3_s3",
+     "plugppo_pcl1cm_lr3e3_s4",
+     "plugppo_pcl1cm_lr3e3_s5"
+    ]
+   }
+  },
+  "res_grpo": {
+   "1e-4": {
+    "LF": [
+     "pluggrpo_shlockLF_lr1e4_s1",
+     "pluggrpo_shlockLF_lr1e4_s2",
+     "pluggrpo_shlockLF_lr1e4_s3"
+    ],
+    "PCL": [
+     "pluggrpo_pcl1cm_lr1e4_s1",
+     "pluggrpo_pcl1cm_lr1e4_s2",
+     "pluggrpo_pcl1cm_lr1e4_s3"
+    ]
+   },
+   "3e-4": {
+    "LF": [
+     "pluggrpo_shlockLF_s1",
+     "pluggrpo_shlockLF_s2",
+     "pluggrpo_shlockLF_s3"
+    ],
+    "PCL": [
+     "pluggrpo_pcl1cm_s1",
+     "pluggrpo_pcl1cm_s2",
+     "pluggrpo_pcl1cm_s3"
+    ]
+   },
+   "1e-3": {
+    "LF": [
+     "pluggrpo_shlockLF_lr1e3_s1",
+     "pluggrpo_shlockLF_lr1e3_s2",
+     "pluggrpo_shlockLF_lr1e3_s3"
+    ],
+    "PCL": [
+     "pluggrpo_pcl1cm_lr1e3_s1",
+     "pluggrpo_pcl1cm_lr1e3_s2",
+     "pluggrpo_pcl1cm_lr1e3_s3"
+    ]
+   },
+   "3e-3": {
+    "LF": [
+     "pluggrpo_shlockLF_lr3e3_s1",
+     "pluggrpo_shlockLF_lr3e3_s2",
+     "pluggrpo_shlockLF_lr3e3_s3",
+     "pluggrpo_shlockLF_lr3e3_s4",
+     "pluggrpo_shlockLF_lr3e3_s5"
+    ],
+    "PCL": [
+     "pluggrpo_pcl1cm_lr3e3_s1",
+     "pluggrpo_pcl1cm_lr3e3_s2",
+     "pluggrpo_pcl1cm_lr3e3_s3",
+     "pluggrpo_pcl1cm_lr3e3_s4",
+     "pluggrpo_pcl1cm_lr3e3_s5"
+    ]
+   }
+  }
+ },
+ "S4_bz2": {
+  "full_grpo": {
+   "lr": "1e-5",
+   "models": [
+    "grpo_shbz2_s1",
+    "grpo_shbz2_s2",
+    "grpo_shbz2_s3"
+   ]
+  },
+  "full_ppo": {
+   "lr": "1e-5",
+   "models": [
+    "ppoft_shbz2_lr1_s1",
+    "ppoft_shbz2_lr1_s2",
+    "ppoft_shbz2_lr1_s3"
+   ]
+  },
+  "res_ppo": {
+   "lr": "3e-3",
+   "models": [
+    "sx_BZ2_rp_3em3_s1",
+    "sx_BZ2_rp_3em3_s2",
+    "sx_BZ2_rp_3em3_s3"
+   ]
+  },
+  "res_grpo": {
+   "lr": "1e-3",
+   "models": [
+    "sx_BZ2_rg_1em3_s1",
+    "sx_BZ2_rg_1em3_s2",
+    "sx_BZ2_rg_1em3_s3"
+   ]
+  }
+ },
+ "frozen": {
+  "zr_comp_c": 0.005,
+  "compsearch_bzr3_means": {
+   "-0.01": 0.73359375,
+   "-0.005": 0.783984375,
+   "0.005": 0.804296875,
+   "0.01": 0.76015625,
+   "0.0": 0.77734375
+  }
+ }
+}

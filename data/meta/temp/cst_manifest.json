@@ -1,0 +1,124 @@
+{
+ "eval_seed": 4242,
+ "lr_rho": "1e-3",
+ "cst": {
+  "LF|3e-3": [
+   {
+    "tag": "cst_LF_3em3_s1",
+    "short": "cstLF3em3s1"
+   },
+   {
+    "tag": "cst_LF_3em3_s2",
+    "short": "cstLF3em3s2"
+   },
+   {
+    "tag": "cst_LF_3em3_s3",
+    "short": "cstLF3em3s3"
+   }
+  ],
+  "LF|1e-2": [
+   {
+    "tag": "cst_LF_1em2_s1",
+    "short": "cstLF1em2s1"
+   },
+   {
+    "tag": "cst_LF_1em2_s2",
+    "short": "cstLF1em2s2"
+   },
+   {
+    "tag": "cst_LF_1em2_s3",
+    "short": "cstLF1em2s3"
+   }
+  ],
+  "LF|3e-2": [
+   {
+    "tag": "cst_LF_3em2_s1",
+    "short": "cstLF3em2s1"
+   },
+   {
+    "tag": "cst_LF_3em2_s2",
+    "short": "cstLF3em2s2"
+   },
+   {
+    "tag": "cst_LF_3em2_s3",
+    "short": "cstLF3em2s3"
+   }
+  ],
+  "RFLF|3e-3": [
+   {
+    "tag": "cst_RFLF_3em3_s1",
+    "short": "cstRFLF3em3s1"
+   },
+   {
+    "tag": "cst_RFLF_3em3_s2",
+    "short": "cstRFLF3em3s2"
+   },
+   {
+    "tag": "cst_RFLF_3em3_s3",
+    "short": "cstRFLF3em3s3"
+   }
+  ],
+  "RFLF|1e-2": [
+   {
+    "tag": "cst_RFLF_1em2_s1",
+    "short": "cstRFLF1em2s1"
+   },
+   {
+    "tag": "cst_RFLF_1em2_s2",
+    "short": "cstRFLF1em2s2"
+   },
+   {
+    "tag": "cst_RFLF_1em2_s3",
+    "short": "cstRFLF1em2s3"
+   }
+  ],
+  "RFLF|3e-2": [
+   {
+    "tag": "cst_RFLF_3em2_s1",
+    "short": "cstRFLF3em2s1"
+   },
+   {
+    "tag": "cst_RFLF_3em2_s2",
+    "short": "cstRFLF3em2s2"
+   },
+   {
+    "tag": "cst_RFLF_3em2_s3",
+    "short": "cstRFLF3em2s3"
+   }
+  ]
+ },
+ "refs": {
+  "LF": {
+   "cond": "LF",
+   "label": "shlockLF",
+   "residual": [
+    "pluggrpo_shlockLF_lr1e3_s1",
+    "pluggrpo_shlockLF_lr1e3_s2",
+    "pluggrpo_shlockLF_lr1e3_s3"
+   ],
+   "posthoc_const": [
+    "const_pluggrpo_shlockLF_lr1e3_s1",
+    "const_pluggrpo_shlockLF_lr1e3_s2",
+    "const_pluggrpo_shlockLF_lr1e3_s3"
+   ]
+  },
+  "RFLF": {
+   "cond": "RFLF",
+   "label": "shlockRFLF",
+   "residual": [
+    "sx_RFLF_rg_1em3_s1",
+    "sx_RFLF_rg_1em3_s2",
+    "sx_RFLF_rg_1em3_s3",
+    "sx_RFLF_rg_1em3_s4",
+    "sx_RFLF_rg_1em3_s5"
+   ],
+   "posthoc_const": [
+    "const_sx_RFLF_rg_1em3_s1",
+    "const_sx_RFLF_rg_1em3_s2",
+    "const_sx_RFLF_rg_1em3_s3",
+    "const_sx_RFLF_rg_1em3_s4",
+    "const_sx_RFLF_rg_1em3_s5"
+   ]
+  }
+ }
+}

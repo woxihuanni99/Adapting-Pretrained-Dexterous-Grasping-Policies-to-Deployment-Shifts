@@ -1,0 +1,176 @@
+{
+ "eval_seed": 4242,
+ "ms": {
+  "LF|1e-3": [
+   {
+    "tag": "ms_LF_1em3_s1",
+    "short": "msLF1em3s1"
+   },
+   {
+    "tag": "ms_LF_1em3_s2",
+    "short": "msLF1em3s2"
+   },
+   {
+    "tag": "ms_LF_1em3_s3",
+    "short": "msLF1em3s3"
+   }
+  ],
+  "LF|3e-3": [
+   {
+    "tag": "ms_LF_3em3_s1",
+    "short": "msLF3em3s1"
+   },
+   {
+    "tag": "ms_LF_3em3_s2",
+    "short": "msLF3em3s2"
+   },
+   {
+    "tag": "ms_LF_3em3_s3",
+    "short": "msLF3em3s3"
+   }
+  ],
+  "PCL|1e-3": [
+   {
+    "tag": "ms_PCL_1em3_s1",
+    "short": "msPCL1em3s1"
+   },
+   {
+    "tag": "ms_PCL_1em3_s2",
+    "short": "msPCL1em3s2"
+   },
+   {
+    "tag": "ms_PCL_1em3_s3",
+    "short": "msPCL1em3s3"
+   }
+  ],
+  "PCL|3e-3": [
+   {
+    "tag": "ms_PCL_3em3_s1",
+    "short": "msPCL3em3s1"
+   },
+   {
+    "tag": "ms_PCL_3em3_s2",
+    "short": "msPCL3em3s2"
+   },
+   {
+    "tag": "ms_PCL_3em3_s3",
+    "short": "msPCL3em3s3"
+   }
+  ]
+ },
+ "d0": {
+  "LF|1e-3": [
+   {
+    "tag": "pluggrpo_shlockLF_lr1e3_s1",
+    "short": "shlockLFpluggrpolr1e3s1"
+   },
+   {
+    "tag": "pluggrpo_shlockLF_lr1e3_s2",
+    "short": "shlockLFpluggrpolr1e3s2"
+   },
+   {
+    "tag": "pluggrpo_shlockLF_lr1e3_s3",
+    "short": "shlockLFpluggrpolr1e3s3"
+   }
+  ],
+  "LF|3e-3": [
+   {
+    "tag": "pluggrpo_shlockLF_lr3e3_s1",
+    "short": "shlockLFpluggrpolr3e3s1"
+   },
+   {
+    "tag": "pluggrpo_shlockLF_lr3e3_s2",
+    "short": "shlockLFpluggrpolr3e3s2"
+   },
+   {
+    "tag": "pluggrpo_shlockLF_lr3e3_s3",
+    "short": "shlockLFpluggrpolr3e3s3"
+   }
+  ],
+  "PCL|1e-3": [
+   {
+    "tag": "pluggrpo_pcl1cm_lr1e3_s1",
+    "short": "pcl1cmpluggrpolr1e3s1"
+   },
+   {
+    "tag": "pluggrpo_pcl1cm_lr1e3_s2",
+    "short": "pcl1cmpluggrpolr1e3s2"
+   },
+   {
+    "tag": "pluggrpo_pcl1cm_lr1e3_s3",
+    "short": "pcl1cmpluggrpolr1e3s3"
+   }
+  ],
+  "PCL|3e-3": [
+   {
+    "tag": "pluggrpo_pcl1cm_lr3e3_s1",
+    "short": "pcl1cmpluggrpolr3e3s1"
+   },
+   {
+    "tag": "pluggrpo_pcl1cm_lr3e3_s2",
+    "short": "pcl1cmpluggrpolr3e3s2"
+   },
+   {
+    "tag": "pluggrpo_pcl1cm_lr3e3_s3",
+    "short": "pcl1cmpluggrpolr3e3s3"
+   }
+  ]
+ },
+ "const": {
+  "pluggrpo_shlockLF_lr1e3_s1": {
+   "const_tag": "const_pluggrpo_shlockLF_lr1e3_s1",
+   "cond": "LF",
+   "head_sha256": "5e64e8d65a693fa1543c81db6d42dcf8c18f6a02ecd05c328e94286c973517a4"
+  },
+  "pluggrpo_shlockLF_lr1e3_s2": {
+   "const_tag": "const_pluggrpo_shlockLF_lr1e3_s2",
+   "cond": "LF",
+   "head_sha256": "f400f58351f4e72717326880966a25d01486a0fc0cdadc262a1e18c72ed0314e"
+  },
+  "pluggrpo_shlockLF_lr1e3_s3": {
+   "const_tag": "const_pluggrpo_shlockLF_lr1e3_s3",
+   "cond": "LF",
+   "head_sha256": "8dd3bb3ccff0ef1364442c190565d2fa91bc2a388ff500101107764682aaad72"
+  },
+  "sx_LF75_rg_1em3_s1": {
+   "const_tag": "const_sx_LF75_rg_1em3_s1",
+   "cond": "LF75",
+   "head_sha256": "8fde4e820b763ba1cbfe2c5b9bbcab55d1222d976c3c0b7d6b9b9e45d47aad69"
+  },
+  "sx_LF75_rg_1em3_s2": {
+   "const_tag": "const_sx_LF75_rg_1em3_s2",
+   "cond": "LF75",
+   "head_sha256": "71055b169de3264694b0ff1eaa0023d4dff00d516b05fa3fc71a5ff77b616af3"
+  },
+  "sx_LF75_rg_1em3_s3": {
+   "const_tag": "const_sx_LF75_rg_1em3_s3",
+   "cond": "LF75",
+   "head_sha256": "5b37d8901c28a711fc9bb847d8c0934cce1683474e108a8a07288c3dac3c1188"
+  },
+  "sx_RFLF_rg_1em3_s1": {
+   "const_tag": "const_sx_RFLF_rg_1em3_s1",
+   "cond": "RFLF",
+   "head_sha256": "898d016dbf1e8a4ba78cb6dda936489618c3807f76a219d49ba01e75ee5bafac"
+  },
+  "sx_RFLF_rg_1em3_s2": {
+   "const_tag": "const_sx_RFLF_rg_1em3_s2",
+   "cond": "RFLF",
+   "head_sha256": "9caf16ef6b7f85853e2e559d9d84704a6abbb19d9e56a0068095deb71278a256"
+  },
+  "sx_RFLF_rg_1em3_s3": {
+   "const_tag": "const_sx_RFLF_rg_1em3_s3",
+   "cond": "RFLF",
+   "head_sha256": "e0ab28229c0d735d3ab7bc7d0738fcb0fb8691069cf6c11884d471988ad92a96"
+  },
+  "sx_RFLF_rg_1em3_s4": {
+   "const_tag": "const_sx_RFLF_rg_1em3_s4",
+   "cond": "RFLF",
+   "head_sha256": "f77a13175706b64e96c50f77f0358f6d34f07c5bd471dc60e47640fa537fd053"
+  },
+  "sx_RFLF_rg_1em3_s5": {
+   "const_tag": "const_sx_RFLF_rg_1em3_s5",
+   "cond": "RFLF",
+   "head_sha256": "af7d71a57f3d25ca6c36a7e191a8f556fef321244f315c3a50c95cf51d1c5d28"
+  }
+ }
+}

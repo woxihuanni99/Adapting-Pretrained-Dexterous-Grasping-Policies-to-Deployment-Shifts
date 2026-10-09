@@ -1,0 +1,6 @@
+# Analysis (rebuild of all numbers and figures; no GPU or simulator needed)
+numpy>=1.21
+scipy>=1.7
+matplotlib>=3.5
+# Training and evaluation additionally need PyTorch, Isaac Gym Preview 4 and the DemoGrasp requirements
+# (https://github.com/BeingBeyond/DemoGrasp); see README.md.

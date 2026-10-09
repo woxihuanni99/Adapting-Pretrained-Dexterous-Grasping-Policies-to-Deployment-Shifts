@@ -1,0 +1,71 @@
+{
+ "eval_seed": 4242,
+ "lr": {
+  "grpo": "1e-5",
+  "ppo": "1e-5",
+  "plugppo": "3e-3",
+  "pluggrpo": "1e-3",
+  "pluggrpoU": "1e-3"
+ },
+ "models": {
+  "grpo|shlockTH": [
+   "al_shlockTH_fg_1em5_s1",
+   "al_shlockTH_fg_1em5_s2",
+   "al_shlockTH_fg_1em5_s3"
+  ],
+  "ppo|shlockTH": [
+   "al_shlockTH_fp_1em5_s1",
+   "al_shlockTH_fp_1em5_s2",
+   "al_shlockTH_fp_1em5_s3"
+  ],
+  "plugppo|shlockTH": [
+   "al_shlockTH_rp_3em3_s1",
+   "al_shlockTH_rp_3em3_s2",
+   "al_shlockTH_rp_3em3_s3"
+  ],
+  "pluggrpo|shlockTH": [
+   "al_shlockTH_rg_1em3_s1",
+   "al_shlockTH_rg_1em3_s2",
+   "al_shlockTH_rg_1em3_s3"
+  ],
+  "pluggrpoU|shlockTH": [
+   "al_shlockTH_rgU_1em3_s1",
+   "al_shlockTH_rgU_1em3_s2",
+   "al_shlockTH_rgU_1em3_s3"
+  ],
+  "grpo|shbz2": [
+   "al_shbz2_fg_1em5_s1",
+   "al_shbz2_fg_1em5_s2",
+   "al_shbz2_fg_1em5_s3"
+  ],
+  "ppo|shbz2": [
+   "al_shbz2_fp_1em5_s1",
+   "al_shbz2_fp_1em5_s2",
+   "al_shbz2_fp_1em5_s3"
+  ],
+  "plugppo|shbz2": [
+   "al_shbz2_rp_3em3_s1",
+   "al_shbz2_rp_3em3_s2",
+   "al_shbz2_rp_3em3_s3"
+  ],
+  "pluggrpo|shbz2": [
+   "al_shbz2_rg_1em3_s1",
+   "al_shbz2_rg_1em3_s2",
+   "al_shbz2_rg_1em3_s3"
+  ]
+ },
+ "frozen": {
+  "alTH": {
+   "seen": "final_seen_alTH_alfrozen",
+   "unseen": "final_unseen_alTH_alfrozen"
+  },
+  "alnom": {
+   "seen": "final_seen_alnom_alfrozen",
+   "unseen": "final_unseen_alnom_alfrozen"
+  },
+  "albz2": {
+   "seen": "final_seen_albz2_alfrozen",
+   "unseen": "final_unseen_albz2_alfrozen"
+  }
+ }
+}
