@@ -1,5 +1,9 @@
 # Adapting Pretrained Dexterous Grasping Policies to Deployment Shifts
 
+## Current CSCWD manuscript: v6
+
+The [v6 manuscript and supplementary builders](manuscript/cscwd2027_v6/) merge the author-supplied v5 with the reviewed recovery–retention revision. The [existing-data analysis](extensions/cscwd2027_1102/review_v5/) and float-validation fix are unchanged. V4 and the intermediate repository v5 stay available; v6 is the current manuscript source.
+
 ## CSCWD manuscript v5 revision
 
 The latest [manuscript and supplementary source](manuscript/cscwd2027_v5/) and [existing-data curve analysis](extensions/cscwd2027_1102/review_v5/) add recovery–retention curve summaries and run-level uncertainty. The extension's float comparison now tolerates negligible SciPy quantile roundoff while still rejecting changes in counts or substantive results. Original numerical records and the v4 source remain available.
