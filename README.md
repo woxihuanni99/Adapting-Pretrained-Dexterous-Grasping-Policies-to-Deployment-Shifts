@@ -1,6 +1,10 @@
 # Adapting Pretrained Dexterous Grasping Policies to Deployment Shifts
 
-## Current CSCWD manuscript: v7
+## Current CSCWD manuscript: v8
+
+The [v8 builder](manuscript/cscwd2027_v8/) adds a concrete example update record, concise limitations and checked documentation references. [Existing-record checks](extensions/cscwd2027_1102/review_v8/) retain source-specific evaluations and verify the added descriptive comparisons. This remains one self-contained paper, with no supplementary-file dependency or new GPU experiments.
+
+## CSCWD manuscript v7 (previous)
 
 The [v7 builder](manuscript/cscwd2027_v7/) produces one self-contained conference paper, with essential method details and the original nine-test table in the main document. It does not depend on a supplementary-file upload. Numerical results and completed experiments are unchanged; v6 and earlier sources remain available.
 

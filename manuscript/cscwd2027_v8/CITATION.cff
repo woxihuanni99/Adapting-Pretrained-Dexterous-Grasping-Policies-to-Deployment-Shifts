@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Source for the CSCWD manuscript v8 and its reproducibility package."
+title: "Recovery–Retention Trade-offs in Adapting a Pretrained Dexterous Grasp Planner"
+type: software
+version: "cscwd-v8-20261102"
+date-released: 2026-11-02
+authors:
+  - family-names: Lan
+    given-names: Haoze
+  - family-names: Yuan
+    given-names: Yongbin
+repository-code: "https://github.com/woxihuanni99/Adapting-Pretrained-Dexterous-Grasping-Policies-to-Deployment-Shifts"
+license: MIT

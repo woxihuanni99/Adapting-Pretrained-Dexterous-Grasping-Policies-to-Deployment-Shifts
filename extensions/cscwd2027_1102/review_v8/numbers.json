@@ -1,0 +1,436 @@
+{
+  "sources": [
+    {
+      "path": "analysis/numbers.json",
+      "sha256": "e9bad131e59ca665b632623c14dbde5593aa9cc6a251566336c1be2b429c6ca8"
+    },
+    {
+      "path": "extensions/cscwd2027_1102/results/numbers.json",
+      "sha256": "0941a4387984ff5ee0a370bd330fec50d91d4790452d23031fd492af60162cfc"
+    },
+    {
+      "path": "extensions/cscwd2027_1102/review_v5/numbers.json",
+      "sha256": "6e33841a821de162c12dd975213edc9f6f7a392c3b2f83e0edfb436658466813"
+    }
+  ],
+  "cards": [
+    {
+      "label": "Full PPO",
+      "source": "A",
+      "changes": "Planner + scale",
+      "review_form": "Weights",
+      "postures": "Ref., 25%, 75%",
+      "success": {
+        "n": 3,
+        "mean": 40.99364657210402,
+        "sd": 4.96488474633027,
+        "CI95": [
+          28.660189139403865,
+          53.32710400480417
+        ],
+        "runs": [
+          42.601063829787236,
+          35.424202127659576,
+          44.955673758865245
+        ]
+      },
+      "loss": {
+        "n": 3,
+        "mean": 3.3896276595744683,
+        "sd": 1.4140056331836224,
+        "CI95": [
+          -0.12295705840084237,
+          6.902212377549779
+        ],
+        "runs": [
+          1.961436170212766,
+          4.789007092198582,
+          3.4184397163120566
+        ]
+      }
+    },
+    {
+      "label": "Residual PPO",
+      "source": "A",
+      "changes": "2×256 MLP + scale",
+      "review_form": "State-dependent correction",
+      "postures": "Ref., 25%, 75%",
+      "success": {
+        "n": 5,
+        "mean": 65.09140070921985,
+        "sd": 5.434065441945512,
+        "CI95": [
+          58.34411728607287,
+          71.83868413236684
+        ],
+        "runs": [
+          71.11923758865248,
+          64.03812056737588,
+          66.53147163120568,
+          67.27039007092199,
+          56.49778368794326
+        ]
+      },
+      "loss": {
+        "n": 5,
+        "mean": 5.7314716312056735,
+        "sd": 1.3862361831915613,
+        "CI95": [
+          4.0102320695293106,
+          7.452711192882036
+        ],
+        "runs": [
+          7.753989361702128,
+          5.476507092198582,
+          5.69459219858156,
+          5.874113475177305,
+          3.858156028368794
+        ]
+      }
+    },
+    {
+      "label": "Scaled shift",
+      "source": "B",
+      "changes": "24 mean edits",
+      "review_form": "Fixed output vector",
+      "postures": "Reference",
+      "success": {
+        "n": 3,
+        "mean": 67.58880023640661,
+        "sd": 0.4344542256389225,
+        "CI95": [
+          66.50955611048106,
+          68.66804436233217
+        ],
+        "runs": [
+          67.44414893617021,
+          68.07712765957447,
+          67.24512411347517
+        ]
+      },
+      "loss": {
+        "n": 3,
+        "mean": 4.528664302600472,
+        "sd": 0.6549388255226292,
+        "CI95": [
+          2.9017060672504007,
+          6.155622537950543
+        ],
+        "runs": [
+          5.202570921985805,
+          3.8945035460992927,
+          4.488918439716317
+        ]
+      }
+    }
+  ],
+  "card_scope": "A: same-server extension, Table III. B: separate 24-parameter shift-control series, Table V. Do not compute a cross-source performance contrast. The 24-parameter arm has no reported LF75/RFLF evaluation.",
+  "kl_interpolation": {
+    "loss_pp": 2.3865248226950353,
+    "success_pct": 36.79137115839244,
+    "interpolated_residual_pct": {
+      "res_ppo": 51.495011813959756,
+      "res_grpo": 54.552270184280935
+    },
+    "source": "Original-protocol ledger; descriptive interpolation only."
+  },
+  "observed_means_in_common_range_interior": {
+    "full_grpo": [],
+    "full_ppo": [
+      5.068705673758867
+    ],
+    "res_ppo": [],
+    "res_grpo": [
+      2.781176122931439,
+      4.932033096926713
+    ]
+  },
+  "cross_runtime_points": [
+    {
+      "method": "fwppo",
+      "new_server_loss_pp": 3.3896276595744683,
+      "new_server_success_pct": 40.99364657210402,
+      "original_curve_prediction_pct": 42.27717875591154
+    },
+    {
+      "method": "fwgrpo",
+      "new_server_loss_pp": 3.917641843971631,
+      "new_server_success_pct": 37.344858156028366,
+      "original_curve_prediction_pct": 39.51681605896309
+    }
+  ],
+  "cross_runtime_point_interpretation": "Different runtime from original curves; not a validation of interpolation bias.",
+  "optional_tost_audit": {
+    "margin_pp": 3.0,
+    "estimate_pp": 0.41971040189125475,
+    "df": 4.204605058401323,
+    "se_pp": 1.1375160144543155,
+    "one_sided_p": [
+      0.018619976894450524,
+      0.0413201886947716
+    ],
+    "p": 0.0413201886947716,
+    "scope": "Post hoc ±3 pp margin; audited for reviewer reply only, not added to the paper or original nine-test family."
+  },
+  "references": [
+    {
+      "DOI": "10.1145/3287560.3287596",
+      "title": [
+        "Model Cards for Model Reporting"
+      ],
+      "page": "220-229",
+      "container-title": [
+        "Proceedings of the Conference on Fairness, Accountability, and Transparency"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            1,
+            29
+          ]
+        ]
+      },
+      "author": [
+        {
+          "given": "Margaret",
+          "family": "Mitchell",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Simone",
+          "family": "Wu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrew",
+          "family": "Zaldivar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Parker",
+          "family": "Barnes",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lucy",
+          "family": "Vasserman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ben",
+          "family": "Hutchinson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Elena",
+          "family": "Spitzer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Inioluwa Deborah",
+          "family": "Raji",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Timnit",
+          "family": "Gebru",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "DOI": "10.1109/icse-seip.2019.00042",
+      "title": [
+        "Software Engineering for Machine Learning: A Case Study"
+      ],
+      "page": "291-300",
+      "container-title": [
+        "2019 IEEE/ACM 41st International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP)"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            5
+          ]
+        ]
+      },
+      "author": [
+        {
+          "given": "Saleema",
+          "family": "Amershi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andrew",
+          "family": "Begel",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christian",
+          "family": "Bird",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Robert",
+          "family": "DeLine",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Harald",
+          "family": "Gall",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ece",
+          "family": "Kamar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nachiappan",
+          "family": "Nagappan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Besmira",
+          "family": "Nushi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Thomas",
+          "family": "Zimmermann",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "new_training": 0,
+  "new_simulation": 0
+}

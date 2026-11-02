@@ -33,4 +33,4 @@ See [`../../manuscript/cscwd2027_v4/`](../../manuscript/cscwd2027_v4/) for v4 pl
 
 The recomputation check allows only negligible float roundoff (absolute tolerance 1e-8; relative tolerance 1e-10), while counts, labels, keys and list lengths remain exact. `python extensions/cscwd2027_1102/test_numeric_validation.py` checks accepted quantile noise and rejected material errors. The expected results are unchanged. `research_plugin_rl.py` also retains exploratory SAC/DSRL options; only the PPO/GRPO modes recorded in the command manifest contribute to these reported comparisons.
 
-The latest manuscript source is [`../../manuscript/cscwd2027_v7/`](../../manuscript/cscwd2027_v7/), a single self-contained paper without supplementary-file dependencies. Earlier versions remain available. New existing-data curve analyses are in [`review_v5/`](review_v5/).
+The latest manuscript source is [`../../manuscript/cscwd2027_v8/`](../../manuscript/cscwd2027_v8/), a single self-contained paper without supplementary-file dependencies. Earlier versions remain available. New existing-data curve analyses are in [`review_v5/`](review_v5/).
