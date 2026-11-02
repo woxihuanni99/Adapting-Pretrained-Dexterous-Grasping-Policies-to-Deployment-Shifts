@@ -1,5 +1,23 @@
 # Adapting Pretrained Dexterous Grasping Policies to Deployment Shifts
 
+## CSCWD 2027 reproduction update — 2 November 2026
+
+The code for **Recovery–Retention Trade-offs in Dexterous Grasping Policy Adaptation** (manuscript v4) is now in:
+
+- [`extensions/cscwd2027_1102/`](extensions/cscwd2027_1102/): the 22-run extension, all 543 formal evaluations' official per-attempt success flags, development selection and the 16 new statistical contrasts.
+- [`manuscript/cscwd2027_v4/`](manuscript/cscwd2027_v4/): plotting code, the checked figure assets, table generation and the portable Word manuscript builder.
+
+CPU-only reproduction:
+
+```bash
+pip install -r extensions/cscwd2027_1102/requirements.txt
+python extensions/cscwd2027_1102/recompute.py
+```
+
+The original October release below remains unchanged. The extension has its own data, results and reproduction commands.
+
+## Original October 2026 release
+
 Code and data for the manuscript
 
 > **Adapting Pretrained Dexterous Grasping Policies to Deployment Shifts: An Empirical Study of Update Parameterization and Recovery–Retention Trade-offs**

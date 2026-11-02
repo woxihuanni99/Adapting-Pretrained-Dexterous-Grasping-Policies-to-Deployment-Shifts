@@ -1,0 +1,278 @@
+[
+  {
+    "difference_pp": 24.097754137115835,
+    "CI95_unadjusted_two_sided_pp": [
+      14.245961422672126,
+      33.949546851559546
+    ],
+    "df": 4.695404226220303,
+    "group_sizes": [
+      5,
+      3
+    ],
+    "comparison": "selected_residual_minus_expanded_selected_FW",
+    "optimizer": "ppo",
+    "test_condition": "LF",
+    "nominal_loss_difference_pp": 2.341843971631205
+  },
+  {
+    "difference_pp": 31.934840425531917,
+    "CI95_unadjusted_two_sided_pp": [
+      26.859391156087334,
+      37.0102896949765
+    ],
+    "df": 3.1481914157074904,
+    "group_sizes": [
+      3,
+      3
+    ],
+    "comparison": "selected_residual_minus_expanded_selected_FW",
+    "optimizer": "grpo",
+    "test_condition": "LF",
+    "nominal_loss_difference_pp": 3.844858156028369
+  },
+  {
+    "difference_pp": 28.01629728132388,
+    "CI95_unadjusted_two_sided_pp": [
+      23.05987575249721,
+      32.97271881015055
+    ],
+    "df": 6.308633113778502,
+    "group_sizes": [
+      5,
+      3,
+      3,
+      3
+    ],
+    "comparison": "equal_optimizer_average_selected_residual_minus_expanded_selected_FW",
+    "test_condition": "LF",
+    "nominal_loss_difference_pp": 3.093351063829787,
+    "nominal_loss_CI95_pp": [
+      1.712768286383649,
+      4.473933841275925
+    ]
+  },
+  {
+    "difference_pp": 36.04683806146572,
+    "CI95_unadjusted_two_sided_pp": [
+      28.45076916653786,
+      43.64290695639358
+    ],
+    "df": 2.274926002006486,
+    "group_sizes": [
+      3,
+      3
+    ],
+    "comparison": "matched_residual_3e-4_minus_matched_fullweight_1e-5",
+    "test_condition": "LF",
+    "development_feasible_residual": false,
+    "interpretation": "Fixed-configuration descriptive comparison; report joint development feasibility separately."
+  },
+  {
+    "difference_pp": 23.6512706855792,
+    "CI95_unadjusted_two_sided_pp": [
+      14.044026081290085,
+      33.25851528986831
+    ],
+    "df": 4.5818725757848755,
+    "group_sizes": [
+      5,
+      3
+    ],
+    "comparison": "selected_residual_minus_expanded_selected_FW",
+    "optimizer": "ppo",
+    "test_condition": "LF25",
+    "nominal_loss_difference_pp": 2.341843971631205
+  },
+  {
+    "difference_pp": 31.17109929078015,
+    "CI95_unadjusted_two_sided_pp": [
+      25.90199955809733,
+      36.44019902346297
+    ],
+    "df": 2.7123113849470912,
+    "group_sizes": [
+      3,
+      3
+    ],
+    "comparison": "selected_residual_minus_expanded_selected_FW",
+    "optimizer": "grpo",
+    "test_condition": "LF25",
+    "nominal_loss_difference_pp": 3.844858156028369
+  },
+  {
+    "difference_pp": 27.41118498817967,
+    "CI95_unadjusted_two_sided_pp": [
+      22.58648081284481,
+      32.235889163514535
+    ],
+    "df": 6.073312880027289,
+    "group_sizes": [
+      5,
+      3,
+      3,
+      3
+    ],
+    "comparison": "equal_optimizer_average_selected_residual_minus_expanded_selected_FW",
+    "test_condition": "LF25",
+    "nominal_loss_difference_pp": 3.093351063829787,
+    "nominal_loss_CI95_pp": [
+      1.712768286383649,
+      4.473933841275925
+    ]
+  },
+  {
+    "difference_pp": 34.371010638297875,
+    "CI95_unadjusted_two_sided_pp": [
+      26.750300202527594,
+      41.99172107406815
+    ],
+    "df": 2.110203961845313,
+    "group_sizes": [
+      3,
+      3
+    ],
+    "comparison": "matched_residual_3e-4_minus_matched_fullweight_1e-5",
+    "test_condition": "LF25",
+    "development_feasible_residual": false,
+    "interpretation": "Fixed-configuration descriptive comparison; report joint development feasibility separately."
+  },
+  {
+    "difference_pp": 0.2636229314420824,
+    "CI95_unadjusted_two_sided_pp": [
+      -3.1713754999345825,
+      3.698621362818747
+    ],
+    "df": 3.1741415107163373,
+    "group_sizes": [
+      5,
+      3
+    ],
+    "comparison": "selected_residual_minus_expanded_selected_FW",
+    "optimizer": "ppo",
+    "test_condition": "LF75",
+    "nominal_loss_difference_pp": 2.341843971631205
+  },
+  {
+    "difference_pp": 0.5757978723404271,
+    "CI95_unadjusted_two_sided_pp": [
+      -6.268106568980076,
+      7.41970231366093
+    ],
+    "df": 2.6322937599580407,
+    "group_sizes": [
+      3,
+      3
+    ],
+    "comparison": "selected_residual_minus_expanded_selected_FW",
+    "optimizer": "grpo",
+    "test_condition": "LF75",
+    "nominal_loss_difference_pp": 3.844858156028369
+  },
+  {
+    "difference_pp": 0.41971040189125475,
+    "CI95_unadjusted_two_sided_pp": [
+      -2.678842790918851,
+      3.5182635947013603
+    ],
+    "df": 4.204605058401323,
+    "group_sizes": [
+      5,
+      3,
+      3,
+      3
+    ],
+    "comparison": "equal_optimizer_average_selected_residual_minus_expanded_selected_FW",
+    "test_condition": "LF75",
+    "nominal_loss_difference_pp": 3.093351063829787,
+    "nominal_loss_CI95_pp": [
+      1.712768286383649,
+      4.473933841275925
+    ]
+  },
+  {
+    "difference_pp": -0.632978723404257,
+    "CI95_unadjusted_two_sided_pp": [
+      -4.300018712178851,
+      3.034061265370337
+    ],
+    "df": 3.2849863731908555,
+    "group_sizes": [
+      3,
+      3
+    ],
+    "comparison": "matched_residual_3e-4_minus_matched_fullweight_1e-5",
+    "test_condition": "LF75",
+    "development_feasible_residual": false,
+    "interpretation": "Fixed-configuration descriptive comparison; report joint development feasibility separately."
+  },
+  {
+    "difference_pp": -2.1413416075649963,
+    "CI95_unadjusted_two_sided_pp": [
+      -7.808730070819971,
+      3.5260468556899784
+    ],
+    "df": 2.067726129512544,
+    "group_sizes": [
+      5,
+      3
+    ],
+    "comparison": "selected_residual_minus_expanded_selected_FW",
+    "optimizer": "ppo",
+    "test_condition": "pn10",
+    "nominal_loss_difference_pp": -1.211081560283688
+  },
+  {
+    "difference_pp": -3.3328900709219766,
+    "CI95_unadjusted_two_sided_pp": [
+      -6.858782898602385,
+      0.19300275675843181
+    ],
+    "df": 2.0114614978333147,
+    "group_sizes": [
+      3,
+      3
+    ],
+    "comparison": "selected_residual_minus_expanded_selected_FW",
+    "optimizer": "grpo",
+    "test_condition": "pn10",
+    "nominal_loss_difference_pp": -0.7587174940898347
+  },
+  {
+    "difference_pp": -2.7371158392434864,
+    "CI95_unadjusted_two_sided_pp": [
+      -5.107149294202909,
+      -0.3670823842840636
+    ],
+    "df": 3.3956763571019604,
+    "group_sizes": [
+      5,
+      3,
+      3,
+      3
+    ],
+    "comparison": "equal_optimizer_average_selected_residual_minus_expanded_selected_FW",
+    "test_condition": "pn10",
+    "nominal_loss_difference_pp": -0.9848995271867613,
+    "nominal_loss_CI95_pp": [
+      -1.878527386012748,
+      -0.0912716683607745
+    ]
+  },
+  {
+    "difference_pp": -3.4711879432624215,
+    "CI95_unadjusted_two_sided_pp": [
+      -5.358066066407191,
+      -1.584309820117652
+    ],
+    "df": 3.9763422594991407,
+    "group_sizes": [
+      3,
+      3
+    ],
+    "comparison": "matched_residual_3e-4_minus_matched_fullweight_1e-5",
+    "test_condition": "pn10",
+    "development_feasible_residual": false,
+    "interpretation": "Fixed-configuration descriptive comparison; report joint development feasibility separately."
+  }
+]

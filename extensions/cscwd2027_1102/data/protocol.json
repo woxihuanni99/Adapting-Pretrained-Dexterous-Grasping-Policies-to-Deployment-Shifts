@@ -1,0 +1,92 @@
+{
+  "id": "cscwd_extension_1101",
+  "created_utc": "2026-11-01T03:52:47.832025+00:00",
+  "training_initial": 18,
+  "training_maximum": 26,
+  "families": {
+    "fwppo": {
+      "lr": 2e-05,
+      "phase_iterations": [
+        26,
+        26,
+        25
+      ],
+      "interactions": 19712
+    },
+    "fwgrpo": {
+      "lr": 2e-05,
+      "phase_iterations": [
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4
+      ],
+      "interactions": 19456
+    },
+    "matchedres": {
+      "lr": 0.0003,
+      "fixed_scale": "max(sigma0,0.05)",
+      "epochs": 2,
+      "interactions": 18944
+    }
+  },
+  "budget_audit": "Original archived PPO plans specify 26+26+25 iterations = 19712 interactions; full-weight GRPO specifies 38x512=19456; residual GRPO specifies 37x512=18944. Preserve these original recipes, not the incorrect informal assertion that all budgets are identical. Record exact manifest-based interaction accounting in reporting.",
+  "topup": {
+    "families": [
+      "fwppo",
+      "fwgrpo"
+    ],
+    "initial_n_per_condition": 3,
+    "criterion": "Any LF/PCL development mean loss in inclusive [4,6] pp, computed unrounded against same-runtime frozen nominal baseline",
+    "add_per_condition": 2,
+    "maximum_once": true,
+    "trigger_uses": "development outcomes only; never test outcomes",
+    "old_candidate_runs": "fixed original groups, no new topup of old candidates"
+  },
+  "matched_stop": "Only add 3e-4, n=3 each LF/PCL; no 1e-4 or other rate based on results.",
+  "selection": "Require development nominal loss <=5 pp in BOTH LF/PCL; maximize mean LF/PCL fault success, ties smaller worst loss then smaller rate.",
+  "development": {
+    "seed": 777,
+    "object_list": "union_ycb_unidex/research_dfg_dev64_x2.yaml",
+    "fault_attempts": 512,
+    "nominal_attempts": 2048
+  },
+  "test": {
+    "seed": 4242,
+    "seen_attempts": 1128,
+    "unseen_attempts": 800,
+    "score": "equal-weight seen/unseen mean",
+    "LF_conditions": [
+      "LF",
+      "nom",
+      "LF25",
+      "LF75"
+    ],
+    "PCL_conditions": [
+      "pn10",
+      "nom"
+    ]
+  },
+  "collision_control": "Fault and nominal for new models plus same-setting frozen controls; both collisions and ground are changed; validate initial-state comparability.",
+  "original_analysis": "Keep original Table II configurations, all eight conditions and original nine Holm tests unchanged. Expanded-grid analysis covers LF/PCL only.",
+  "statistics": "Independent training runs; descriptive mean/SD and Welch-Satterthwaite contrasts; no additions to original nine-test family.",
+  "completed": {
+    "training_runs": 22,
+    "training_interactions": 426496,
+    "formal_evaluation_units": {
+      "main": 361,
+      "fixed": 146,
+      "selected": 36
+    },
+    "formal_evaluation_attempts": 565072,
+    "additional_baseline_calibration_attempts": 2048
+  }
+}

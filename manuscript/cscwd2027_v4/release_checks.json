@@ -1,0 +1,11 @@
+{
+  "source_v4_docx_sha256": "f390528dc4f927c83cfebbbf522d1216294c59e5afd6b54eba2cb57ce12cadbe",
+  "source_v4_pdf_sha256": "8fc36b257986131989457188b35b50ff80074c70b7082860b920814c6a476365",
+  "original_ledger_git_blob": "60c851987daad723eda505f33a2f05b462215246",
+  "source_same_runtime_numbers_sha256": "ef373b8641630bcfddb26a2c4bf8972948b908a3e13c373c243bc35b736100da",
+  "portable_changes": [
+    "repository-relative input paths",
+    "local output directory",
+    "no project-state or automation mutations"
+  ]
+}

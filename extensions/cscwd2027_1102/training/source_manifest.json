@@ -1,0 +1,50 @@
+[
+  {
+    "script": "research_ppo_finetune.py",
+    "staged_sha256": "c6cd1c92d75d3174c742575b0966289518b283e1f77984b4cf1632510f001509",
+    "release_change": "Output-path guard only: optional DEXGRASP_ROOT; all other AST nodes unchanged. Text line endings normalized to LF.",
+    "public_sha256": "c17a413d3589a0715933ae90dcc21e646c6369f81587041355ae6d27e25ebdbc"
+  },
+  {
+    "script": "research_ppo_pcl.py",
+    "staged_sha256": "776aaea07db20289b90d50d06a944189dd1f228610ef590b44e1ae6f2fd29b24",
+    "release_change": "none Text line endings normalized to LF.",
+    "public_sha256": "776aaea07db20289b90d50d06a944189dd1f228610ef590b44e1ae6f2fd29b24"
+  },
+  {
+    "script": "research_grpo_finetune_v2.py",
+    "staged_sha256": "eefee191eef0fe74c8d764c636edcb5f55063706d3e95c9709fa5f3e32e93122",
+    "release_change": "Output-path guard only: optional DEXGRASP_ROOT; all other AST nodes unchanged. Text line endings normalized to LF.",
+    "public_sha256": "2f310e9c32e6613cc79c3fd6a9f179bbece4ff6c2e17b44a9581407c7b77dad6"
+  },
+  {
+    "script": "research_grpo_fm.py",
+    "staged_sha256": "2b9aace402180dab648a70be51e8f6fa50da94f6ffed526639ddac65f789803c",
+    "release_change": "Output-path guard only: optional DEXGRASP_ROOT; all other AST nodes unchanged. Text line endings normalized to LF.",
+    "public_sha256": "ee87a6d5f9733bffa38149f144dfaeb8f41ad391e3c9482725d5e065ad375174"
+  },
+  {
+    "script": "research_grpo_fm_coll.py",
+    "staged_sha256": "e4fce2515fe6d941f27479067a580c5d3c7893b209ada4827f259a32e583be26",
+    "release_change": "Output-path guard only: optional DEXGRASP_ROOT; all other AST nodes unchanged. Text line endings normalized to LF.",
+    "public_sha256": "9677514799970aeddb71baf376256cc52b49bf6260ceb1c077c438625e8578cd"
+  },
+  {
+    "script": "research_plugin_rl.py",
+    "staged_sha256": "cf56278edf59557df763ef7087adfb3e6484024740346984582a51d6b34f7f49",
+    "release_change": "Output-path guard only: optional DEXGRASP_ROOT; all other AST nodes unchanged. Text line endings normalized to LF.",
+    "public_sha256": "f7e1eda33bbb73456888dd95306f4fe5bffe72e3de6c7538a74e23f0e3c2aad0"
+  },
+  {
+    "script": "research_plugin_rl_fs.py",
+    "staged_sha256": "3428053cf3e9da2758e3f4009dfb29efda5657804ce675dcd4c848c045971d9e",
+    "release_change": "Output-path guard only: optional DEXGRASP_ROOT; all other AST nodes unchanged. Text line endings normalized to LF.",
+    "public_sha256": "dfd48e20cdbbfaaa1f5a29d2339951f78f03b0b39aa8b1884a051b211d04ccd1"
+  },
+  {
+    "script": "research_shift_run.py",
+    "staged_sha256": "f16bec3c7e4c8436d5d3a16a8995d632adcc637099ddb0eb84157a3d8aff7561",
+    "release_change": "none Text line endings normalized to LF.",
+    "public_sha256": "f16bec3c7e4c8436d5d3a16a8995d632adcc637099ddb0eb84157a3d8aff7561"
+  }
+]

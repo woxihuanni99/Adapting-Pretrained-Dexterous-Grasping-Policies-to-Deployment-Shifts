@@ -1,0 +1,22 @@
+{
+  "fwppo": {
+    "utc_epoch": 1793536462.16868,
+    "initial_mean_dev_loss_pp": {
+      "LF": 2.63671875,
+      "PCL": 3.401692708333337
+    },
+    "triggered": false,
+    "new_seeds_per_condition": 0,
+    "test_results_used": false
+  },
+  "fwgrpo": {
+    "utc_epoch": 1793539789.5987797,
+    "initial_mean_dev_loss_pp": {
+      "LF": 4.4270833333333375,
+      "PCL": 5.95703125
+    },
+    "triggered": true,
+    "new_seeds_per_condition": 2,
+    "test_results_used": false
+  }
+}

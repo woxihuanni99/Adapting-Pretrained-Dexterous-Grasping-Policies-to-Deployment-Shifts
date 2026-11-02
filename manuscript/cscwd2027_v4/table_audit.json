@@ -1,0 +1,262 @@
+{
+  "TABLE I. UPDATE CONFIGURATIONS": {
+    "headers": [
+      "Procedure",
+      "Sampling scale",
+      "Epochs",
+      "Attempts"
+    ],
+    "rows": [
+      [
+        "Full-weight PPO",
+        "Learned",
+        "5",
+        "19,712"
+      ],
+      [
+        "Full-weight GRPO",
+        "max(σ₀, 0.05)",
+        "2",
+        "19,456"
+      ],
+      [
+        "Residual PPO",
+        "σ₀ ⊙ exp(ρ)",
+        "5",
+        "18,944"
+      ],
+      [
+        "Residual GRPO",
+        "σ₀ ⊙ exp(ρ)",
+        "5",
+        "18,944"
+      ]
+    ]
+  },
+  "TABLE II. ORIGINAL SUCCESS (%) AND NOMINAL LOSS (pp)": {
+    "headers": [
+      "Shift",
+      "Frozen",
+      "Full\nPPO",
+      "Full\nGRPO",
+      "Residual\nPPO",
+      "Residual\nGRPO"
+    ],
+    "rows": [
+      [
+        "LF",
+        "16.9",
+        "31.9\n(1.2)",
+        "32.1\n(1.0)",
+        "65.2\n(5.4)",
+        "64.2\n(4.9)"
+      ],
+      [
+        "PCL",
+        "74.5",
+        "81.2\n(1.5)",
+        "82.9\n(2.2)",
+        "79.7\n(1.5)",
+        "79.8\n(1.0)"
+      ],
+      [
+        "TH",
+        "71.5",
+        "74.6\n(1.7)",
+        "76.0\n(2.7)",
+        "72.8\n(1.8)",
+        "74.2\n(1.9)"
+      ],
+      [
+        "ZR",
+        "78.9",
+        "78.1\n(1.4)",
+        "79.8\n(2.1)",
+        "77.7\n(1.0)",
+        "78.0\n(0.4)"
+      ],
+      [
+        "Z2+PCL",
+        "70.7",
+        "78.8\n(0.7)",
+        "78.9\n(0.5)",
+        "76.0\n(0.7)",
+        "76.2\n(1.1)"
+      ],
+      [
+        "TH+PCL",
+        "68.9",
+        "74.0\n(2.0)",
+        "75.4\n(1.6)",
+        "72.5\n(1.8)",
+        "72.2\n(1.2)"
+      ],
+      [
+        "A: TH",
+        "42.5",
+        "54.0\n(2.8)",
+        "56.5\n(6.9)",
+        "52.7\n(5.7)",
+        "53.7\n(3.6)"
+      ],
+      [
+        "A: Z2",
+        "68.5",
+        "82.2\n(6.0)",
+        "83.5\n(7.8)",
+        "80.8\n(6.0)",
+        "80.8\n(6.4)"
+      ]
+    ]
+  },
+  "TABLE III. SAME-RUNTIME EXTENSION RESULTS": {
+    "headers": [
+      "Procedure",
+      "Rate / n",
+      "LF",
+      "PCL"
+    ],
+    "rows": [
+      [
+        "FW-PPO",
+        "2×10⁻⁵ / 3",
+        "41.0 (3.4)",
+        "81.8 (3.5)"
+      ],
+      [
+        "FW-GRPO",
+        "10⁻⁵ / 3",
+        "32.2 (1.4)",
+        "82.8 (2.4)"
+      ],
+      [
+        "Residual PPO",
+        "3×10⁻³ / 5",
+        "65.1 (5.7)",
+        "79.6 (2.3)"
+      ],
+      [
+        "Residual GRPO",
+        "10⁻³ / 3",
+        "64.2 (5.2)",
+        "79.5 (1.6)"
+      ],
+      [
+        "Matched FW-GRPO",
+        "10⁻⁵ / 3",
+        "32.0 (2.1)",
+        "83.0 (2.6)"
+      ],
+      [
+        "Matched residual",
+        "3×10⁻⁴ / 3",
+        "68.0 (6.4)",
+        "79.5 (2.3)"
+      ]
+    ]
+  },
+  "TABLE IV. ORIGINAL NINE DIRECTIONAL TESTS": {
+    "headers": [
+      "Test",
+      "Setting / gain",
+      "Effect [95% CI]",
+      "Holm p"
+    ],
+    "rows": [
+      [
+        "H1",
+        "Reference LF",
+        "32.7 [29.4, 36.1]",
+        "<0.001"
+      ],
+      [
+        "H2",
+        "LF versus PCL",
+        "35.0 [31.6, 38.5]",
+        "<0.001"
+      ],
+      [
+        "H3a",
+        "25% lock",
+        "31.6 [28.4, 34.9]",
+        "<0.001"
+      ],
+      [
+        "H3b",
+        "75% lock",
+        "-0.2 [-3.7, 3.2]",
+        "1.000"
+      ],
+      [
+        "H4a",
+        "LF → LF+PCL\n31.4 → 19.7",
+        "11.7 [10.1, 13.3]",
+        "<0.001"
+      ],
+      [
+        "H4b",
+        "PCL → LF+PCL\n6.4 → 2.9",
+        "3.4 [2.2, 4.7]",
+        "<0.001"
+      ],
+      [
+        "H4c",
+        "TH → TH+ZR\n2.9 → 1.5",
+        "1.4 [0.6, 2.1]",
+        "0.013"
+      ],
+      [
+        "H4d",
+        "ZR → TH+ZR\n-0.5 → -0.2",
+        "-0.3 [-1.8, 1.2]",
+        "1.000"
+      ],
+      [
+        "H5",
+        "Ideal routing",
+        "14.5 [2.2, 26.9]",
+        "0.048"
+      ]
+    ]
+  },
+  "TABLE V. ORIGINAL CORRECTION DIAGNOSTICS": {
+    "headers": [
+      "Correction",
+      "Form/parameters",
+      "Success",
+      "Loss"
+    ],
+    "rows": [
+      [
+        "Residual GRPO",
+        "State-dependent",
+        "64.2",
+        "4.9"
+      ],
+      [
+        "Post-training constant",
+        "Constant",
+        "66.7",
+        "4.2"
+      ],
+      [
+        "Direct constant + scale",
+        "48",
+        "67.1",
+        "4.1"
+      ],
+      [
+        "Scaled output shift",
+        "24",
+        "67.6",
+        "4.5"
+      ],
+      [
+        "Raw output shift",
+        "24",
+        "27.1",
+        "3.3"
+      ]
+    ]
+  }
+}

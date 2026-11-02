@@ -1,0 +1,74 @@
+[
+  {
+    "path": "training/object_lists/union_ycb_unidex/research_dfg_dev64_x2.yaml",
+    "sha256": "eb5d7826f8e7ee3679765c95fd4ec648c54e0234b6f6b7e86066d1b0015148c1"
+  },
+  {
+    "path": "training/object_lists/union_ycb_unidex/research_fql_v1_ppo_phase0.yaml",
+    "sha256": "6fa8c495f10b43266a181a29caa4db0070681eb7a7456b2f245d0bbbedfd80ff"
+  },
+  {
+    "path": "training/object_lists/union_ycb_unidex/research_fql_v1_ppo_phase1.yaml",
+    "sha256": "e4b8bd41a0c1eb581bf569f368d2d45490b9953546c5eef0f7df35d8292f5154"
+  },
+  {
+    "path": "training/object_lists/union_ycb_unidex/research_fql_v1_ppo_phase2.yaml",
+    "sha256": "3dc14ac1c56f1850547c4711b9b0464ec727480f77dc85904dd17a4ac8c711af"
+  },
+  {
+    "path": "training/object_lists/union_ycb_unidex/research_grpo_v1_phase00_64x8.yaml",
+    "sha256": "b7f8b517436c863349c49bd12e14ba9d8b0872637866503ec7886e085aa906ba"
+  },
+  {
+    "path": "training/object_lists/union_ycb_unidex/research_grpo_v1_phase01_64x8.yaml",
+    "sha256": "f001861416a6812e18880b4cf7d6081bd1268cecda391f041f1ffb2093131e6c"
+  },
+  {
+    "path": "training/object_lists/union_ycb_unidex/research_grpo_v1_phase02_64x8.yaml",
+    "sha256": "74d4dfbe63ecd21c5e5abb2dda17f9fb2e77da14b5e1545ee0e795969b08c075"
+  },
+  {
+    "path": "training/object_lists/union_ycb_unidex/research_grpo_v1_phase03_64x8.yaml",
+    "sha256": "560178ab32b84e4e66c1312fd86c822e93842e0ec3190fbe088312a246e4ea13"
+  },
+  {
+    "path": "training/object_lists/union_ycb_unidex/research_grpo_v1_phase04_64x8.yaml",
+    "sha256": "d33b150fc87faba12611b915185cf6357466491644e26fdb2ecc8051f560107d"
+  },
+  {
+    "path": "training/object_lists/union_ycb_unidex/research_grpo_v1_phase05_64x8.yaml",
+    "sha256": "4d22fa02c69769550c8e4a5454691be86139193a8bb0e990bc0e3ca6863bb2f6"
+  },
+  {
+    "path": "training/object_lists/union_ycb_unidex/research_grpo_v1_phase06_64x8.yaml",
+    "sha256": "936e4e17c065d5ca17c4877d218b270eda569b64a9185c995c0c60777db5a0b5"
+  },
+  {
+    "path": "training/object_lists/union_ycb_unidex/research_grpo_v1_phase07_64x8.yaml",
+    "sha256": "3c49b9ad025e40b0147f4b0b2b8a6051dceec1b7703c81d03cb31680fe723d6d"
+  },
+  {
+    "path": "training/object_lists/union_ycb_unidex/research_grpo_v1_phase08_64x8.yaml",
+    "sha256": "ecfe4dd216c850ba980f165aeb166f90e73ef7efa0705a6b0a9c60185e807802"
+  },
+  {
+    "path": "training/object_lists/union_ycb_unidex/research_grpo_v1_phase09_64x8.yaml",
+    "sha256": "a8134a000dbd0264729499cce37b328ce2c4c385391840cf88db6557699c0014"
+  },
+  {
+    "path": "training/object_lists/union_ycb_unidex/research_grpo_v1_phase10_64x8.yaml",
+    "sha256": "df06557fbecae62bd6ede5891522cb836d96ffbaf2d74d61797f991dcf844e22"
+  },
+  {
+    "path": "training/object_lists/union_ycb_unidex/research_grpo_v1_phase11_64x8.yaml",
+    "sha256": "353fa9694696761dd106f80d6e17ea3e56e0686b3c7d74be93c68c224377cf23"
+  },
+  {
+    "path": "training/object_lists/union_ycb_unidex/test_set_seen_cat.yaml",
+    "sha256": "ddf33d8a289ace2abd369fde621e8595bd3662e590a317890b678da61b36811c"
+  },
+  {
+    "path": "training/object_lists/union_ycb_unidex/test_set_unseen_cat.yaml",
+    "sha256": "44bfbb24088d2459db9295b68c11c6d595f3c9d58adb7e322359f725ee0a93aa"
+  }
+]

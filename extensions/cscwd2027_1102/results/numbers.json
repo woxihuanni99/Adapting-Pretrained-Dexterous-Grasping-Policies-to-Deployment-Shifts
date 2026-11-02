@@ -1,0 +1,1098 @@
+{
+  "frozen_test_success_pct": {
+    "LF": 17.37322695035461,
+    "LF25": 19.35195035460993,
+    "LF75": 15.951241134751774,
+    "pn10": 74.17154255319149,
+    "nom": 91.3209219858156
+  },
+  "development_selection": {
+    "recorded_epoch": 1793558613.3693004,
+    "queue_sha256": "d799145ea1855716e082cccc92899d88f6feb6b8f7b04fb70b36e32499b4e879",
+    "frozen_dev_nominal": 0.8984375,
+    "frozen_dev_exact": "115/128",
+    "topup_decisions": {
+      "fwppo": {
+        "utc_epoch": 1793536462.16868,
+        "initial_mean_dev_loss_pp": {
+          "LF": 2.63671875,
+          "PCL": 3.401692708333337
+        },
+        "triggered": false,
+        "new_seeds_per_condition": 0,
+        "test_results_used": false
+      },
+      "fwgrpo": {
+        "utc_epoch": 1793539789.5987797,
+        "initial_mean_dev_loss_pp": {
+          "LF": 4.4270833333333375,
+          "PCL": 5.95703125
+        },
+        "triggered": true,
+        "new_seeds_per_condition": 2,
+        "test_results_used": false
+      }
+    },
+    "expanded_grid": [
+      {
+        "method": "fwppo",
+        "learning_rate": "2e-5",
+        "LF_n": 3,
+        "LF_success_pct": 34.309895833333336,
+        "LF_loss_pp": 2.63671875,
+        "LF_loss_exact": "675/256",
+        "PCL_n": 3,
+        "PCL_success_pct": 78.45052083333333,
+        "PCL_loss_pp": 3.4016927083333335,
+        "PCL_loss_exact": "5225/1536",
+        "feasible": true,
+        "objective": 0.5638020833333334,
+        "objective_exact": "433/768",
+        "worst_loss_pp": 3.4016927083333335,
+        "worst_loss_exact": "5225/1536"
+      },
+      {
+        "method": "fwgrpo",
+        "learning_rate": "2e-5",
+        "LF_n": 5,
+        "LF_success_pct": 28.9453125,
+        "LF_loss_pp": 3.876953125,
+        "LF_loss_exact": "1985/512",
+        "PCL_n": 5,
+        "PCL_success_pct": 81.40625,
+        "PCL_loss_pp": 5.64453125,
+        "PCL_loss_exact": "1445/256",
+        "feasible": false,
+        "objective": 0.5517578125,
+        "objective_exact": "565/1024",
+        "worst_loss_pp": 5.64453125,
+        "worst_loss_exact": "1445/256"
+      },
+      {
+        "method": "matchedres",
+        "learning_rate": "3e-4",
+        "LF_n": 3,
+        "LF_success_pct": 64.58333333333333,
+        "LF_loss_pp": 7.8125,
+        "LF_loss_exact": "125/16",
+        "PCL_n": 3,
+        "PCL_success_pct": 73.69791666666667,
+        "PCL_loss_pp": 2.2298177083333335,
+        "PCL_loss_exact": "3425/1536",
+        "feasible": false,
+        "objective": 0.69140625,
+        "objective_exact": "177/256",
+        "worst_loss_pp": 7.8125,
+        "worst_loss_exact": "125/16"
+      },
+      {
+        "method": "fwppo",
+        "learning_rate": "1e-5",
+        "LF_n": 3,
+        "LF_success_pct": 26.106770833333332,
+        "LF_loss_pp": 1.0416666666666667,
+        "LF_loss_exact": "25/24",
+        "PCL_n": 3,
+        "PCL_success_pct": 76.49739583333333,
+        "PCL_loss_pp": 2.3274739583333335,
+        "PCL_loss_exact": "3575/1536",
+        "feasible": true,
+        "objective": 0.5130208333333334,
+        "objective_exact": "197/384",
+        "worst_loss_pp": 2.3274739583333335,
+        "worst_loss_exact": "3575/1536"
+      },
+      {
+        "method": "fwppo",
+        "learning_rate": "3e-5",
+        "LF_n": 5,
+        "LF_success_pct": 44.6875,
+        "LF_loss_pp": 4.78515625,
+        "LF_loss_exact": "1225/256",
+        "PCL_n": 5,
+        "PCL_success_pct": 77.9296875,
+        "PCL_loss_pp": 6.669921875,
+        "PCL_loss_exact": "3415/512",
+        "feasible": false,
+        "objective": 0.6130859375,
+        "objective_exact": "3139/5120",
+        "worst_loss_pp": 6.669921875,
+        "worst_loss_exact": "3415/512"
+      },
+      {
+        "method": "fwppo",
+        "learning_rate": "1e-4",
+        "LF_n": 3,
+        "LF_success_pct": 42.903645833333336,
+        "LF_loss_pp": 36.328125,
+        "LF_loss_exact": "2325/64",
+        "PCL_n": 3,
+        "PCL_success_pct": 63.8671875,
+        "PCL_loss_pp": 29.801432291666668,
+        "PCL_loss_exact": "45775/1536",
+        "feasible": false,
+        "objective": 0.5338541666666666,
+        "objective_exact": "205/384",
+        "worst_loss_pp": 36.328125,
+        "worst_loss_exact": "2325/64"
+      },
+      {
+        "method": "fwgrpo",
+        "learning_rate": "1e-5",
+        "LF_n": 3,
+        "LF_success_pct": 27.018229166666668,
+        "LF_loss_pp": 0.6022135416666666,
+        "LF_loss_exact": "925/1536",
+        "PCL_n": 3,
+        "PCL_success_pct": 80.79427083333333,
+        "PCL_loss_pp": 3.5319010416666665,
+        "PCL_loss_exact": "5425/1536",
+        "feasible": true,
+        "objective": 0.5390625,
+        "objective_exact": "69/128",
+        "worst_loss_pp": 3.5319010416666665,
+        "worst_loss_exact": "5425/1536"
+      },
+      {
+        "method": "fwgrpo",
+        "learning_rate": "3e-5",
+        "LF_n": 3,
+        "LF_success_pct": 40.8203125,
+        "LF_loss_pp": 9.700520833333334,
+        "LF_loss_exact": "3725/384",
+        "PCL_n": 3,
+        "PCL_success_pct": 82.2265625,
+        "PCL_loss_pp": 7.259114583333333,
+        "PCL_loss_exact": "5575/768",
+        "feasible": false,
+        "objective": 0.615234375,
+        "objective_exact": "315/512",
+        "worst_loss_pp": 9.700520833333334,
+        "worst_loss_exact": "3725/384"
+      },
+      {
+        "method": "fwgrpo",
+        "learning_rate": "1e-4",
+        "LF_n": 3,
+        "LF_success_pct": 54.036458333333336,
+        "LF_loss_pp": 28.678385416666668,
+        "LF_loss_exact": "22025/768",
+        "PCL_n": 3,
+        "PCL_success_pct": 69.53125,
+        "PCL_loss_pp": 17.708333333333332,
+        "PCL_loss_exact": "425/24",
+        "feasible": false,
+        "objective": 0.6178385416666666,
+        "objective_exact": "949/1536",
+        "worst_loss_pp": 28.678385416666668,
+        "worst_loss_exact": "22025/768"
+      }
+    ],
+    "selected_full_weight_learning_rates": {
+      "fwppo": "2e-5",
+      "fwgrpo": "1e-5"
+    },
+    "matched_residual_scope": "Only the newly tested 3e-4 candidate is evaluated here; older matched residual rates are not reclassified using a different-machine baseline.",
+    "test_effectiveness_read_before_this_record": false,
+    "original_main_analysis_changed": false
+  },
+  "environment_drift": {
+    "n_identical_checkpoints": 40,
+    "old_frozen_dev": 0.88623046875,
+    "new_frozen_dev": 0.8984375,
+    "frozen_change_pp": 1.220703125,
+    "summary": {
+      "nominal_change_pp": {
+        "mean": 0.025634765625,
+        "sd": 0.5948412361715468,
+        "min": -1.513671875,
+        "max": 1.171875,
+        "n": 40
+      },
+      "paired_loss_change_pp": {
+        "mean": 1.195068359375,
+        "sd": 0.5948412361715468,
+        "min": 0.048828125,
+        "max": 2.734375,
+        "n": 40
+      }
+    },
+    "feasibility_flips": [
+      {
+        "method": "fwppo",
+        "learning_rate": "1e-5",
+        "old_feasible": true,
+        "new_feasible": true,
+        "flipped": false,
+        "old_loss_pp": {
+          "LF": 0.341796875,
+          "PCL": 0.8951822916666666
+        },
+        "new_loss_pp": {
+          "LF": 1.0416666666666667,
+          "PCL": 2.3274739583333335
+        }
+      },
+      {
+        "method": "fwppo",
+        "learning_rate": "3e-5",
+        "old_feasible": false,
+        "new_feasible": false,
+        "flipped": false,
+        "old_loss_pp": {
+          "LF": 3.642578125,
+          "PCL": 5.1953125
+        },
+        "new_loss_pp": {
+          "LF": 4.78515625,
+          "PCL": 6.669921875
+        }
+      },
+      {
+        "method": "fwppo",
+        "learning_rate": "1e-4",
+        "old_feasible": false,
+        "new_feasible": false,
+        "flipped": false,
+        "old_loss_pp": {
+          "LF": 34.749348958333336,
+          "PCL": 28.580729166666668
+        },
+        "new_loss_pp": {
+          "LF": 36.328125,
+          "PCL": 29.801432291666668
+        }
+      },
+      {
+        "method": "fwgrpo",
+        "learning_rate": "1e-5",
+        "old_feasible": true,
+        "new_feasible": true,
+        "flipped": false,
+        "old_loss_pp": {
+          "LF": -0.4557291666666667,
+          "PCL": 2.7018229166666665
+        },
+        "new_loss_pp": {
+          "LF": 0.6022135416666666,
+          "PCL": 3.5319010416666665
+        }
+      },
+      {
+        "method": "fwgrpo",
+        "learning_rate": "3e-5",
+        "old_feasible": false,
+        "new_feasible": false,
+        "flipped": false,
+        "old_loss_pp": {
+          "LF": 8.447265625,
+          "PCL": 6.412760416666667
+        },
+        "new_loss_pp": {
+          "LF": 9.700520833333334,
+          "PCL": 7.259114583333333
+        }
+      },
+      {
+        "method": "fwgrpo",
+        "learning_rate": "1e-4",
+        "old_feasible": false,
+        "new_feasible": false,
+        "flipped": false,
+        "old_loss_pp": {
+          "LF": 26.953125,
+          "PCL": 16.780598958333332
+        },
+        "new_loss_pp": {
+          "LF": 28.678385416666668,
+          "PCL": 17.708333333333332
+        }
+      }
+    ],
+    "selected_rate_decomposition": {
+      "fwppo": {
+        "original_runtime_original_grid": "1e-5",
+        "current_runtime_original_grid": "1e-5",
+        "current_runtime_expanded_grid": "2e-5",
+        "attribution": "Original-grid reranking across runtime is reported separately from adding2e-5 within the current runtime."
+      },
+      "fwgrpo": {
+        "original_runtime_original_grid": "1e-5",
+        "current_runtime_original_grid": "1e-5",
+        "current_runtime_expanded_grid": "1e-5",
+        "attribution": "Original-grid reranking across runtime is reported separately from adding2e-5 within the current runtime."
+      }
+    },
+    "test_effectiveness_read": false,
+    "old_source": "data/original_development.json"
+  },
+  "test_summary": [
+    {
+      "role": "expanded_selected_fullweight",
+      "method": "fwppo",
+      "learning_rate": "2e-5",
+      "training_condition": "LF",
+      "test_condition": "LF",
+      "n": 3,
+      "success_mean_pct": 40.99364657210402,
+      "success_sd_pp": 4.96488474633027,
+      "nominal_loss_mean_pp": 3.3896276595744683
+    },
+    {
+      "role": "expanded_selected_fullweight",
+      "method": "fwppo",
+      "learning_rate": "2e-5",
+      "training_condition": "LF",
+      "test_condition": "LF25",
+      "n": 3,
+      "success_mean_pct": 41.794473995271865,
+      "success_sd_pp": 4.859313839305183,
+      "nominal_loss_mean_pp": 3.3896276595744683
+    },
+    {
+      "role": "expanded_selected_fullweight",
+      "method": "fwppo",
+      "learning_rate": "2e-5",
+      "training_condition": "LF",
+      "test_condition": "LF75",
+      "n": 3,
+      "success_mean_pct": 25.48256501182033,
+      "success_sd_pp": 1.7006985387655376,
+      "nominal_loss_mean_pp": 3.3896276595744683
+    },
+    {
+      "role": "expanded_selected_fullweight",
+      "method": "fwppo",
+      "learning_rate": "2e-5",
+      "training_condition": "LF",
+      "test_condition": "nom",
+      "n": 3,
+      "success_mean_pct": 87.93129432624114,
+      "success_sd_pp": 1.4140056331836195,
+      "nominal_loss_mean_pp": 3.3896276595744683
+    },
+    {
+      "role": "new_fullweight_unselected",
+      "method": "fwgrpo",
+      "learning_rate": "2e-5",
+      "training_condition": "LF",
+      "test_condition": "LF",
+      "n": 5,
+      "success_mean_pct": 37.344858156028366,
+      "success_sd_pp": 1.6294593028418904,
+      "nominal_loss_mean_pp": 3.917641843971631
+    },
+    {
+      "role": "new_fullweight_unselected",
+      "method": "fwgrpo",
+      "learning_rate": "2e-5",
+      "training_condition": "LF",
+      "test_condition": "LF25",
+      "n": 5,
+      "success_mean_pct": 38.599024822695036,
+      "success_sd_pp": 1.5235126590956438,
+      "nominal_loss_mean_pp": 3.917641843971631
+    },
+    {
+      "role": "new_fullweight_unselected",
+      "method": "fwgrpo",
+      "learning_rate": "2e-5",
+      "training_condition": "LF",
+      "test_condition": "LF75",
+      "n": 5,
+      "success_mean_pct": 25.81923758865248,
+      "success_sd_pp": 1.8861133696928425,
+      "nominal_loss_mean_pp": 3.917641843971631
+    },
+    {
+      "role": "new_fullweight_unselected",
+      "method": "fwgrpo",
+      "learning_rate": "2e-5",
+      "training_condition": "LF",
+      "test_condition": "nom",
+      "n": 5,
+      "success_mean_pct": 87.40328014184398,
+      "success_sd_pp": 1.1570832446597934,
+      "nominal_loss_mean_pp": 3.917641843971631
+    },
+    {
+      "role": "matched_residual",
+      "method": "matchedres",
+      "learning_rate": "3e-4",
+      "training_condition": "LF",
+      "test_condition": "LF",
+      "n": 3,
+      "success_mean_pct": 68.04329196217495,
+      "success_sd_pp": 3.3130094585292666,
+      "nominal_loss_mean_pp": 6.413120567375887
+    },
+    {
+      "role": "matched_residual",
+      "method": "matchedres",
+      "learning_rate": "3e-4",
+      "training_condition": "LF",
+      "test_condition": "LF25",
+      "n": 3,
+      "success_mean_pct": 68.0653073286052,
+      "success_sd_pp": 3.1802889163206904,
+      "nominal_loss_mean_pp": 6.413120567375887
+    },
+    {
+      "role": "matched_residual",
+      "method": "matchedres",
+      "learning_rate": "3e-4",
+      "training_condition": "LF",
+      "test_condition": "LF75",
+      "n": 3,
+      "success_mean_pct": 25.314864066193852,
+      "success_sd_pp": 1.793930148438101,
+      "nominal_loss_mean_pp": 6.413120567375887
+    },
+    {
+      "role": "matched_residual",
+      "method": "matchedres",
+      "learning_rate": "3e-4",
+      "training_condition": "LF",
+      "test_condition": "nom",
+      "n": 3,
+      "success_mean_pct": 84.90780141843972,
+      "success_sd_pp": 1.1472365100062645,
+      "nominal_loss_mean_pp": 6.413120567375887
+    },
+    {
+      "role": "expanded_selected_fullweight",
+      "method": "fwppo",
+      "learning_rate": "2e-5",
+      "training_condition": "PCL",
+      "test_condition": "pn10",
+      "n": 3,
+      "success_mean_pct": 81.75605791962174,
+      "success_sd_pp": 2.3341909580984233,
+      "nominal_loss_mean_pp": 3.462322695035461
+    },
+    {
+      "role": "expanded_selected_fullweight",
+      "method": "fwppo",
+      "learning_rate": "2e-5",
+      "training_condition": "PCL",
+      "test_condition": "nom",
+      "n": 3,
+      "success_mean_pct": 87.85859929078013,
+      "success_sd_pp": 0.9246020402858534,
+      "nominal_loss_mean_pp": 3.462322695035461
+    },
+    {
+      "role": "new_fullweight_unselected",
+      "method": "fwgrpo",
+      "learning_rate": "2e-5",
+      "training_condition": "PCL",
+      "test_condition": "pn10",
+      "n": 5,
+      "success_mean_pct": 83.10159574468085,
+      "success_sd_pp": 1.0786076226939332,
+      "nominal_loss_mean_pp": 3.331117021276596
+    },
+    {
+      "role": "new_fullweight_unselected",
+      "method": "fwgrpo",
+      "learning_rate": "2e-5",
+      "training_condition": "PCL",
+      "test_condition": "nom",
+      "n": 5,
+      "success_mean_pct": 87.989804964539,
+      "success_sd_pp": 0.5749409089771356,
+      "nominal_loss_mean_pp": 3.331117021276596
+    },
+    {
+      "role": "matched_residual",
+      "method": "matchedres",
+      "learning_rate": "3e-4",
+      "training_condition": "PCL",
+      "test_condition": "pn10",
+      "n": 3,
+      "success_mean_pct": 79.51374113475177,
+      "success_sd_pp": 0.8618178378299145,
+      "nominal_loss_mean_pp": 2.2550236406619386
+    },
+    {
+      "role": "matched_residual",
+      "method": "matchedres",
+      "learning_rate": "3e-4",
+      "training_condition": "PCL",
+      "test_condition": "nom",
+      "n": 3,
+      "success_mean_pct": 89.06589834515367,
+      "success_sd_pp": 0.6006763951268238,
+      "nominal_loss_mean_pp": 2.2550236406619386
+    },
+    {
+      "role": "original_selected_residual",
+      "method": "res_ppo",
+      "learning_rate": "3e-3",
+      "training_condition": "LF",
+      "test_condition": "LF",
+      "n": 5,
+      "success_mean_pct": 65.09140070921985,
+      "success_sd_pp": 5.434065441945512,
+      "nominal_loss_mean_pp": 5.7314716312056735
+    },
+    {
+      "role": "original_selected_residual",
+      "method": "res_ppo",
+      "learning_rate": "3e-3",
+      "training_condition": "LF",
+      "test_condition": "LF25",
+      "n": 5,
+      "success_mean_pct": 65.44574468085106,
+      "success_sd_pp": 5.169335920149278,
+      "nominal_loss_mean_pp": 5.7314716312056735
+    },
+    {
+      "role": "original_selected_residual",
+      "method": "res_ppo",
+      "learning_rate": "3e-3",
+      "training_condition": "LF",
+      "test_condition": "LF75",
+      "n": 5,
+      "success_mean_pct": 25.746187943262413,
+      "success_sd_pp": 1.1724174978312396,
+      "nominal_loss_mean_pp": 5.7314716312056735
+    },
+    {
+      "role": "original_selected_residual",
+      "method": "res_ppo",
+      "learning_rate": "3e-3",
+      "training_condition": "LF",
+      "test_condition": "nom",
+      "n": 5,
+      "success_mean_pct": 85.58945035460992,
+      "success_sd_pp": 1.38623618319156,
+      "nominal_loss_mean_pp": 5.7314716312056735
+    },
+    {
+      "role": "original_selected_residual",
+      "method": "res_ppo",
+      "learning_rate": "3e-3",
+      "training_condition": "PCL",
+      "test_condition": "pn10",
+      "n": 5,
+      "success_mean_pct": 79.61471631205674,
+      "success_sd_pp": 0.39131478318356333,
+      "nominal_loss_mean_pp": 2.251241134751773
+    },
+    {
+      "role": "original_selected_residual",
+      "method": "res_ppo",
+      "learning_rate": "3e-3",
+      "training_condition": "PCL",
+      "test_condition": "nom",
+      "n": 5,
+      "success_mean_pct": 89.06968085106384,
+      "success_sd_pp": 0.5878035967752084,
+      "nominal_loss_mean_pp": 2.251241134751773
+    },
+    {
+      "role": "original_selected_residual",
+      "method": "res_grpo",
+      "learning_rate": "1e-3",
+      "training_condition": "LF",
+      "test_condition": "LF",
+      "n": 3,
+      "success_mean_pct": 64.1744976359338,
+      "success_sd_pp": 2.4728288343048757,
+      "nominal_loss_mean_pp": 5.213504728132388
+    },
+    {
+      "role": "original_selected_residual",
+      "method": "res_grpo",
+      "learning_rate": "1e-3",
+      "training_condition": "LF",
+      "test_condition": "LF25",
+      "n": 3,
+      "success_mean_pct": 64.40972222222223,
+      "success_sd_pp": 2.479711564091917,
+      "nominal_loss_mean_pp": 5.213504728132388
+    },
+    {
+      "role": "original_selected_residual",
+      "method": "res_grpo",
+      "learning_rate": "1e-3",
+      "training_condition": "LF",
+      "test_condition": "LF75",
+      "n": 3,
+      "success_mean_pct": 25.229609929078016,
+      "success_sd_pp": 3.1877322558640655,
+      "nominal_loss_mean_pp": 5.213504728132388
+    },
+    {
+      "role": "original_selected_residual",
+      "method": "res_grpo",
+      "learning_rate": "1e-3",
+      "training_condition": "LF",
+      "test_condition": "nom",
+      "n": 3,
+      "success_mean_pct": 86.10741725768321,
+      "success_sd_pp": 0.6411680589236177,
+      "nominal_loss_mean_pp": 5.213504728132388
+    },
+    {
+      "role": "original_selected_residual",
+      "method": "res_grpo",
+      "learning_rate": "1e-3",
+      "training_condition": "PCL",
+      "test_condition": "pn10",
+      "n": 3,
+      "success_mean_pct": 79.50014775413712,
+      "success_sd_pp": 1.4250870899182162,
+      "nominal_loss_mean_pp": 1.6205673758865249
+    },
+    {
+      "role": "original_selected_residual",
+      "method": "res_grpo",
+      "learning_rate": "1e-3",
+      "training_condition": "PCL",
+      "test_condition": "nom",
+      "n": 3,
+      "success_mean_pct": 89.70035460992908,
+      "success_sd_pp": 0.40780430927128036,
+      "nominal_loss_mean_pp": 1.6205673758865249
+    },
+    {
+      "role": "matched_fullweight_reference",
+      "method": "fwgrpo_matched_reference",
+      "learning_rate": "1e-5",
+      "training_condition": "LF",
+      "test_condition": "LF",
+      "n": 3,
+      "success_mean_pct": 31.996453900709223,
+      "success_sd_pp": 0.8706302293108316,
+      "nominal_loss_mean_pp": 2.1013593380614655
+    },
+    {
+      "role": "matched_fullweight_reference",
+      "method": "fwgrpo_matched_reference",
+      "learning_rate": "1e-5",
+      "training_condition": "LF",
+      "test_condition": "LF25",
+      "n": 3,
+      "success_mean_pct": 33.694296690307326,
+      "success_sd_pp": 0.5280805827573923,
+      "nominal_loss_mean_pp": 2.1013593380614655
+    },
+    {
+      "role": "matched_fullweight_reference",
+      "method": "fwgrpo_matched_reference",
+      "learning_rate": "1e-5",
+      "training_condition": "LF",
+      "test_condition": "LF75",
+      "n": 3,
+      "success_mean_pct": 25.94784278959811,
+      "success_sd_pp": 1.081953547026308,
+      "nominal_loss_mean_pp": 2.1013593380614655
+    },
+    {
+      "role": "matched_fullweight_reference",
+      "method": "fwgrpo_matched_reference",
+      "learning_rate": "1e-5",
+      "training_condition": "LF",
+      "test_condition": "nom",
+      "n": 3,
+      "success_mean_pct": 89.21956264775413,
+      "success_sd_pp": 1.3502013402643795,
+      "nominal_loss_mean_pp": 2.1013593380614655
+    },
+    {
+      "role": "matched_fullweight_reference",
+      "method": "fwgrpo_matched_reference",
+      "learning_rate": "1e-5",
+      "training_condition": "PCL",
+      "test_condition": "pn10",
+      "n": 3,
+      "success_mean_pct": 82.98492907801419,
+      "success_sd_pp": 0.797719153931293,
+      "nominal_loss_mean_pp": 2.567966903073286
+    },
+    {
+      "role": "matched_fullweight_reference",
+      "method": "fwgrpo_matched_reference",
+      "learning_rate": "1e-5",
+      "training_condition": "PCL",
+      "test_condition": "nom",
+      "n": 3,
+      "success_mean_pct": 88.75295508274232,
+      "success_sd_pp": 0.2388466077975635,
+      "nominal_loss_mean_pp": 2.567966903073286
+    },
+    {
+      "role": "expanded_selected_fullweight",
+      "method": "fwgrpo",
+      "learning_rate": "1e-5",
+      "training_condition": "LF",
+      "test_condition": "LF",
+      "n": 3,
+      "success_mean_pct": 32.23965721040189,
+      "success_sd_pp": 1.3892971411582276,
+      "nominal_loss_mean_pp": 1.3686465721040189
+    },
+    {
+      "role": "expanded_selected_fullweight",
+      "method": "fwgrpo",
+      "learning_rate": "1e-5",
+      "training_condition": "LF",
+      "test_condition": "LF25",
+      "n": 3,
+      "success_mean_pct": 33.23862293144208,
+      "success_sd_pp": 1.0640082161733848,
+      "nominal_loss_mean_pp": 1.3686465721040189
+    },
+    {
+      "role": "expanded_selected_fullweight",
+      "method": "fwgrpo",
+      "learning_rate": "1e-5",
+      "training_condition": "LF",
+      "test_condition": "LF75",
+      "n": 3,
+      "success_mean_pct": 24.65381205673759,
+      "success_sd_pp": 1.2839634221084373,
+      "nominal_loss_mean_pp": 1.3686465721040189
+    },
+    {
+      "role": "expanded_selected_fullweight",
+      "method": "fwgrpo",
+      "learning_rate": "1e-5",
+      "training_condition": "LF",
+      "test_condition": "nom",
+      "n": 3,
+      "success_mean_pct": 89.95227541371159,
+      "success_sd_pp": 0.4310189266484519,
+      "nominal_loss_mean_pp": 1.3686465721040189
+    },
+    {
+      "role": "expanded_selected_fullweight",
+      "method": "fwgrpo",
+      "learning_rate": "1e-5",
+      "training_condition": "PCL",
+      "test_condition": "pn10",
+      "n": 3,
+      "success_mean_pct": 82.8330378250591,
+      "success_sd_pp": 0.07628407444381055,
+      "nominal_loss_mean_pp": 2.3792848699763596
+    },
+    {
+      "role": "expanded_selected_fullweight",
+      "method": "fwgrpo",
+      "learning_rate": "1e-5",
+      "training_condition": "PCL",
+      "test_condition": "nom",
+      "n": 3,
+      "success_mean_pct": 88.94163711583924,
+      "success_sd_pp": 0.5102014539322255,
+      "nominal_loss_mean_pp": 2.3792848699763596
+    }
+  ],
+  "contrasts": [
+    {
+      "difference_pp": 24.097754137115835,
+      "CI95_unadjusted_two_sided_pp": [
+        14.245961422672126,
+        33.949546851559546
+      ],
+      "df": 4.695404226220303,
+      "group_sizes": [
+        5,
+        3
+      ],
+      "comparison": "selected_residual_minus_expanded_selected_FW",
+      "optimizer": "ppo",
+      "test_condition": "LF",
+      "nominal_loss_difference_pp": 2.341843971631205
+    },
+    {
+      "difference_pp": 31.934840425531917,
+      "CI95_unadjusted_two_sided_pp": [
+        26.859391156087334,
+        37.0102896949765
+      ],
+      "df": 3.1481914157074904,
+      "group_sizes": [
+        3,
+        3
+      ],
+      "comparison": "selected_residual_minus_expanded_selected_FW",
+      "optimizer": "grpo",
+      "test_condition": "LF",
+      "nominal_loss_difference_pp": 3.844858156028369
+    },
+    {
+      "difference_pp": 28.01629728132388,
+      "CI95_unadjusted_two_sided_pp": [
+        23.05987575249721,
+        32.97271881015055
+      ],
+      "df": 6.308633113778502,
+      "group_sizes": [
+        5,
+        3,
+        3,
+        3
+      ],
+      "comparison": "equal_optimizer_average_selected_residual_minus_expanded_selected_FW",
+      "test_condition": "LF",
+      "nominal_loss_difference_pp": 3.093351063829787,
+      "nominal_loss_CI95_pp": [
+        1.712768286383649,
+        4.473933841275925
+      ]
+    },
+    {
+      "difference_pp": 36.04683806146572,
+      "CI95_unadjusted_two_sided_pp": [
+        28.45076916653786,
+        43.64290695639358
+      ],
+      "df": 2.274926002006486,
+      "group_sizes": [
+        3,
+        3
+      ],
+      "comparison": "matched_residual_3e-4_minus_matched_fullweight_1e-5",
+      "test_condition": "LF",
+      "development_feasible_residual": false,
+      "interpretation": "Fixed-configuration descriptive comparison; report joint development feasibility separately."
+    },
+    {
+      "difference_pp": 23.6512706855792,
+      "CI95_unadjusted_two_sided_pp": [
+        14.044026081290085,
+        33.25851528986831
+      ],
+      "df": 4.5818725757848755,
+      "group_sizes": [
+        5,
+        3
+      ],
+      "comparison": "selected_residual_minus_expanded_selected_FW",
+      "optimizer": "ppo",
+      "test_condition": "LF25",
+      "nominal_loss_difference_pp": 2.341843971631205
+    },
+    {
+      "difference_pp": 31.17109929078015,
+      "CI95_unadjusted_two_sided_pp": [
+        25.90199955809733,
+        36.44019902346297
+      ],
+      "df": 2.7123113849470912,
+      "group_sizes": [
+        3,
+        3
+      ],
+      "comparison": "selected_residual_minus_expanded_selected_FW",
+      "optimizer": "grpo",
+      "test_condition": "LF25",
+      "nominal_loss_difference_pp": 3.844858156028369
+    },
+    {
+      "difference_pp": 27.41118498817967,
+      "CI95_unadjusted_two_sided_pp": [
+        22.58648081284481,
+        32.235889163514535
+      ],
+      "df": 6.073312880027289,
+      "group_sizes": [
+        5,
+        3,
+        3,
+        3
+      ],
+      "comparison": "equal_optimizer_average_selected_residual_minus_expanded_selected_FW",
+      "test_condition": "LF25",
+      "nominal_loss_difference_pp": 3.093351063829787,
+      "nominal_loss_CI95_pp": [
+        1.712768286383649,
+        4.473933841275925
+      ]
+    },
+    {
+      "difference_pp": 34.371010638297875,
+      "CI95_unadjusted_two_sided_pp": [
+        26.750300202527594,
+        41.99172107406815
+      ],
+      "df": 2.110203961845313,
+      "group_sizes": [
+        3,
+        3
+      ],
+      "comparison": "matched_residual_3e-4_minus_matched_fullweight_1e-5",
+      "test_condition": "LF25",
+      "development_feasible_residual": false,
+      "interpretation": "Fixed-configuration descriptive comparison; report joint development feasibility separately."
+    },
+    {
+      "difference_pp": 0.2636229314420824,
+      "CI95_unadjusted_two_sided_pp": [
+        -3.1713754999345825,
+        3.698621362818747
+      ],
+      "df": 3.1741415107163373,
+      "group_sizes": [
+        5,
+        3
+      ],
+      "comparison": "selected_residual_minus_expanded_selected_FW",
+      "optimizer": "ppo",
+      "test_condition": "LF75",
+      "nominal_loss_difference_pp": 2.341843971631205
+    },
+    {
+      "difference_pp": 0.5757978723404271,
+      "CI95_unadjusted_two_sided_pp": [
+        -6.268106568980076,
+        7.41970231366093
+      ],
+      "df": 2.6322937599580407,
+      "group_sizes": [
+        3,
+        3
+      ],
+      "comparison": "selected_residual_minus_expanded_selected_FW",
+      "optimizer": "grpo",
+      "test_condition": "LF75",
+      "nominal_loss_difference_pp": 3.844858156028369
+    },
+    {
+      "difference_pp": 0.41971040189125475,
+      "CI95_unadjusted_two_sided_pp": [
+        -2.678842790918851,
+        3.5182635947013603
+      ],
+      "df": 4.204605058401323,
+      "group_sizes": [
+        5,
+        3,
+        3,
+        3
+      ],
+      "comparison": "equal_optimizer_average_selected_residual_minus_expanded_selected_FW",
+      "test_condition": "LF75",
+      "nominal_loss_difference_pp": 3.093351063829787,
+      "nominal_loss_CI95_pp": [
+        1.712768286383649,
+        4.473933841275925
+      ]
+    },
+    {
+      "difference_pp": -0.632978723404257,
+      "CI95_unadjusted_two_sided_pp": [
+        -4.300018712178851,
+        3.034061265370337
+      ],
+      "df": 3.2849863731908555,
+      "group_sizes": [
+        3,
+        3
+      ],
+      "comparison": "matched_residual_3e-4_minus_matched_fullweight_1e-5",
+      "test_condition": "LF75",
+      "development_feasible_residual": false,
+      "interpretation": "Fixed-configuration descriptive comparison; report joint development feasibility separately."
+    },
+    {
+      "difference_pp": -2.1413416075649963,
+      "CI95_unadjusted_two_sided_pp": [
+        -7.808730070819971,
+        3.5260468556899784
+      ],
+      "df": 2.067726129512544,
+      "group_sizes": [
+        5,
+        3
+      ],
+      "comparison": "selected_residual_minus_expanded_selected_FW",
+      "optimizer": "ppo",
+      "test_condition": "pn10",
+      "nominal_loss_difference_pp": -1.211081560283688
+    },
+    {
+      "difference_pp": -3.3328900709219766,
+      "CI95_unadjusted_two_sided_pp": [
+        -6.858782898602385,
+        0.19300275675843181
+      ],
+      "df": 2.0114614978333147,
+      "group_sizes": [
+        3,
+        3
+      ],
+      "comparison": "selected_residual_minus_expanded_selected_FW",
+      "optimizer": "grpo",
+      "test_condition": "pn10",
+      "nominal_loss_difference_pp": -0.7587174940898347
+    },
+    {
+      "difference_pp": -2.7371158392434864,
+      "CI95_unadjusted_two_sided_pp": [
+        -5.107149294202909,
+        -0.3670823842840636
+      ],
+      "df": 3.3956763571019604,
+      "group_sizes": [
+        5,
+        3,
+        3,
+        3
+      ],
+      "comparison": "equal_optimizer_average_selected_residual_minus_expanded_selected_FW",
+      "test_condition": "pn10",
+      "nominal_loss_difference_pp": -0.9848995271867613,
+      "nominal_loss_CI95_pp": [
+        -1.878527386012748,
+        -0.0912716683607745
+      ]
+    },
+    {
+      "difference_pp": -3.4711879432624215,
+      "CI95_unadjusted_two_sided_pp": [
+        -5.358066066407191,
+        -1.584309820117652
+      ],
+      "df": 3.9763422594991407,
+      "group_sizes": [
+        3,
+        3
+      ],
+      "comparison": "matched_residual_3e-4_minus_matched_fullweight_1e-5",
+      "test_condition": "pn10",
+      "development_feasible_residual": false,
+      "interpretation": "Fixed-configuration descriptive comparison; report joint development feasibility separately."
+    }
+  ],
+  "weighting": "Per training run: half seen mean plus half unseen mean; equal optimizer average where stated.",
+  "inference": "Descriptive unadjusted two-sided95% Welch/Satterthwaite intervals over independent training runs. Original nine hypotheses and decisions unchanged.",
+  "initial_state_audit": {
+    "sha256": "c7e572a7b09564c855a6633ef223736b10b4317f2400af7971d7fb033e3b4940",
+    "numeric_sha256": "0f844dd04a2e75f4739494b3857cd1d1562771aac12ea4a47189877328e526f3",
+    "note": "Initial-state differences are retained; no claim of exact per-attempt pairing and no exclusions based on this audit."
+  },
+  "source_provenance": {
+    "main": {
+      "queue_sha256": "d799145ea1855716e082cccc92899d88f6feb6b8f7b04fb70b36e32499b4e879",
+      "runtime_sha256": "589568e086bac35db37ec92a63765abc794eca02f54c9cd3f5fc37f89b45e6e0"
+    },
+    "fixed": {
+      "queue_sha256": "bc459b9b19252efb620cf4668624039f9ed4fa07a8424379bc2c4d81ae12ab92",
+      "runtime_sha256": "b2d719b0253f94b13e4d9edb10a3714bfa3cb533ab788079838762d3a5912924"
+    },
+    "selected": {
+      "queue_sha256": "c84850bae8cc1ac1bd0a6a1e9e61b793f8317d0d63b9bc2a403fa0829be96c1f",
+      "runtime_sha256": "9769559cafa8dbf3083138526099bcf6276466fb3c1dd58e89e92bd1b07c4c53"
+    }
+  },
+  "analysis_script_sha256": "1f5b9ae48ba9c76411123577e279b4ba652cfaba5a8e10d8f1c83850f33497a9",
+  "new_training_chains": 22,
+  "new_training_interactions": 426496,
+  "main_evaluations": 361,
+  "fixed_reference_evaluations": 146,
+  "selected_FW_reference_evaluations": 36
+}

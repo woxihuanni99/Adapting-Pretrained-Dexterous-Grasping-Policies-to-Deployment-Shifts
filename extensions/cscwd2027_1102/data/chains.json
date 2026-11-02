@@ -1,0 +1,4600 @@
+{
+  "main": [
+    {
+      "name": "uuid_bound_preflight",
+      "family": "frozen",
+      "steps": [
+        {
+          "name": "cx1101_frozen_dev_LF_uuid",
+          "kind": "preflight",
+          "expected_attempts": 512
+        }
+      ]
+    },
+    {
+      "name": "cx1101_fwppo_LF_s1",
+      "family": "fwppo",
+      "condition": "LF",
+      "seed_index": 1,
+      "train_interactions": 19712,
+      "steps": [
+        {
+          "name": "cx1101_fwppo_LF_s1_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwppo_LF_s1_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwppo_LF_s1_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwppo_LF_s1_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_fwppo_LF_s1_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_fwppo_LF_s1_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_LF_s1_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_LF_s1_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_LF_s1_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_LF_s1_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_LF_s1_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_LF_s1_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_LF_s1_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_LF_s1_collision_LF_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_LF_s1_collision_LF_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_LF_s1_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_LF_s1_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_fwgrpo_LF_s1",
+      "family": "fwgrpo",
+      "condition": "LF",
+      "seed_index": 1,
+      "train_interactions": 19456,
+      "steps": [
+        {
+          "name": "cx1101_fwgrpo_LF_s1_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_p03",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_p04",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_p05",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_p06",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_p07",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_p08",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_p09",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_p10",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_p11",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_collision_LF_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_collision_LF_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s1_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_matchedres_LF_s1",
+      "family": "matchedres",
+      "condition": "LF",
+      "seed_index": 1,
+      "train_interactions": 18944,
+      "steps": [
+        {
+          "name": "cx1101_matchedres_LF_s1_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_p03",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_p04",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_p05",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_p06",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_p07",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_p08",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_p09",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_p10",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_p11",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_collision_LF_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_collision_LF_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_LF_s1_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_fwppo_PCL_s1",
+      "family": "fwppo",
+      "condition": "PCL",
+      "seed_index": 1,
+      "train_interactions": 19712,
+      "steps": [
+        {
+          "name": "cx1101_fwppo_PCL_s1_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s1_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s1_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s1_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s1_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s1_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s1_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s1_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s1_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s1_collision_pn10_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s1_collision_pn10_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s1_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s1_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_fwgrpo_PCL_s1",
+      "family": "fwgrpo",
+      "condition": "PCL",
+      "seed_index": 1,
+      "train_interactions": 19456,
+      "steps": [
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_p03",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_p04",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_p05",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_p06",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_p07",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_p08",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_p09",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_p10",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_p11",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_collision_pn10_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_collision_pn10_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s1_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_matchedres_PCL_s1",
+      "family": "matchedres",
+      "condition": "PCL",
+      "seed_index": 1,
+      "train_interactions": 18944,
+      "steps": [
+        {
+          "name": "cx1101_matchedres_PCL_s1_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s1_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s1_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s1_p03",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s1_p04",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s1_p05",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s1_p06",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s1_p07",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s1_p08",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s1_p09",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s1_p10",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s1_p11",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s1_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s1_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s1_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s1_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s1_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s1_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s1_collision_pn10_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s1_collision_pn10_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s1_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s1_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_fwppo_LF_s2",
+      "family": "fwppo",
+      "condition": "LF",
+      "seed_index": 2,
+      "train_interactions": 19712,
+      "steps": [
+        {
+          "name": "cx1101_fwppo_LF_s2_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwppo_LF_s2_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwppo_LF_s2_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwppo_LF_s2_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_fwppo_LF_s2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_fwppo_LF_s2_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_LF_s2_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_LF_s2_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_LF_s2_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_LF_s2_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_LF_s2_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_LF_s2_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_LF_s2_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_LF_s2_collision_LF_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_LF_s2_collision_LF_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_LF_s2_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_LF_s2_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_fwgrpo_LF_s2",
+      "family": "fwgrpo",
+      "condition": "LF",
+      "seed_index": 2,
+      "train_interactions": 19456,
+      "steps": [
+        {
+          "name": "cx1101_fwgrpo_LF_s2_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_p03",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_p04",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_p05",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_p06",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_p07",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_p08",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_p09",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_p10",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_p11",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_collision_LF_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_collision_LF_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s2_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_matchedres_LF_s2",
+      "family": "matchedres",
+      "condition": "LF",
+      "seed_index": 2,
+      "train_interactions": 18944,
+      "steps": [
+        {
+          "name": "cx1101_matchedres_LF_s2_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_p03",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_p04",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_p05",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_p06",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_p07",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_p08",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_p09",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_p10",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_p11",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_collision_LF_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_collision_LF_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_LF_s2_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_fwppo_PCL_s2",
+      "family": "fwppo",
+      "condition": "PCL",
+      "seed_index": 2,
+      "train_interactions": 19712,
+      "steps": [
+        {
+          "name": "cx1101_fwppo_PCL_s2_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s2_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s2_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s2_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s2_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s2_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s2_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s2_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s2_collision_pn10_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s2_collision_pn10_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s2_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s2_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_fwgrpo_PCL_s2",
+      "family": "fwgrpo",
+      "condition": "PCL",
+      "seed_index": 2,
+      "train_interactions": 19456,
+      "steps": [
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_p03",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_p04",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_p05",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_p06",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_p07",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_p08",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_p09",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_p10",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_p11",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_collision_pn10_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_collision_pn10_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s2_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_matchedres_PCL_s2",
+      "family": "matchedres",
+      "condition": "PCL",
+      "seed_index": 2,
+      "train_interactions": 18944,
+      "steps": [
+        {
+          "name": "cx1101_matchedres_PCL_s2_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s2_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s2_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s2_p03",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s2_p04",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s2_p05",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s2_p06",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s2_p07",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s2_p08",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s2_p09",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s2_p10",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s2_p11",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s2_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s2_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s2_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s2_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s2_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s2_collision_pn10_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s2_collision_pn10_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s2_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s2_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_fwppo_LF_s3",
+      "family": "fwppo",
+      "condition": "LF",
+      "seed_index": 3,
+      "train_interactions": 19712,
+      "steps": [
+        {
+          "name": "cx1101_fwppo_LF_s3_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwppo_LF_s3_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwppo_LF_s3_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwppo_LF_s3_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_fwppo_LF_s3_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_fwppo_LF_s3_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_LF_s3_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_LF_s3_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_LF_s3_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_LF_s3_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_LF_s3_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_LF_s3_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_LF_s3_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_LF_s3_collision_LF_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_LF_s3_collision_LF_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_LF_s3_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_LF_s3_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_fwgrpo_LF_s3",
+      "family": "fwgrpo",
+      "condition": "LF",
+      "seed_index": 3,
+      "train_interactions": 19456,
+      "steps": [
+        {
+          "name": "cx1101_fwgrpo_LF_s3_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_p03",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_p04",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_p05",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_p06",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_p07",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_p08",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_p09",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_p10",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_p11",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_collision_LF_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_collision_LF_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s3_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_matchedres_LF_s3",
+      "family": "matchedres",
+      "condition": "LF",
+      "seed_index": 3,
+      "train_interactions": 18944,
+      "steps": [
+        {
+          "name": "cx1101_matchedres_LF_s3_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_p03",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_p04",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_p05",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_p06",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_p07",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_p08",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_p09",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_p10",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_p11",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_collision_LF_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_collision_LF_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_LF_s3_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_fwppo_PCL_s3",
+      "family": "fwppo",
+      "condition": "PCL",
+      "seed_index": 3,
+      "train_interactions": 19712,
+      "steps": [
+        {
+          "name": "cx1101_fwppo_PCL_s3_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s3_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s3_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s3_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s3_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s3_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s3_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s3_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s3_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s3_collision_pn10_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s3_collision_pn10_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s3_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwppo_PCL_s3_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_fwgrpo_PCL_s3",
+      "family": "fwgrpo",
+      "condition": "PCL",
+      "seed_index": 3,
+      "train_interactions": 19456,
+      "steps": [
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_p03",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_p04",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_p05",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_p06",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_p07",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_p08",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_p09",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_p10",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_p11",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_collision_pn10_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_collision_pn10_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s3_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_matchedres_PCL_s3",
+      "family": "matchedres",
+      "condition": "PCL",
+      "seed_index": 3,
+      "train_interactions": 18944,
+      "steps": [
+        {
+          "name": "cx1101_matchedres_PCL_s3_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s3_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s3_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s3_p03",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s3_p04",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s3_p05",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s3_p06",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s3_p07",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s3_p08",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s3_p09",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s3_p10",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s3_p11",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s3_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s3_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s3_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s3_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s3_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s3_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s3_collision_pn10_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s3_collision_pn10_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s3_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_matchedres_PCL_s3_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_fwgrpo_LF_s4",
+      "family": "fwgrpo",
+      "condition": "LF",
+      "seed_index": 4,
+      "train_interactions": 19456,
+      "steps": [
+        {
+          "name": "cx1101_fwgrpo_LF_s4_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_p03",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_p04",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_p05",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_p06",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_p07",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_p08",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_p09",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_p10",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_p11",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_collision_LF_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_collision_LF_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s4_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_fwgrpo_PCL_s4",
+      "family": "fwgrpo",
+      "condition": "PCL",
+      "seed_index": 4,
+      "train_interactions": 19456,
+      "steps": [
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_p03",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_p04",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_p05",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_p06",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_p07",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_p08",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_p09",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_p10",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_p11",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_collision_pn10_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_collision_pn10_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s4_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_fwgrpo_LF_s5",
+      "family": "fwgrpo",
+      "condition": "LF",
+      "seed_index": 5,
+      "train_interactions": 19456,
+      "steps": [
+        {
+          "name": "cx1101_fwgrpo_LF_s5_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_p03",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_p04",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_p05",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_p06",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_p07",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_p08",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_p09",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_p10",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_p11",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_collision_LF_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_collision_LF_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_LF_s5_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_fwgrpo_PCL_s5",
+      "family": "fwgrpo",
+      "condition": "PCL",
+      "seed_index": 5,
+      "train_interactions": 19456,
+      "steps": [
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_p00",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_p01",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_p02",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_p03",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_p04",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_p05",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_p06",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_p07",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_p08",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_p09",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_p10",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_p11",
+          "kind": "train"
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_collision_pn10_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_collision_pn10_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_fwgrpo_PCL_s5_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "frozen_controls",
+      "family": "frozen",
+      "steps": [
+        {
+          "name": "cx1101_frozen_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_frozen_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_frozen_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_frozen_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_frozen_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_frozen_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_frozen_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_frozen_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_frozen_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_frozen_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_frozen_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_frozen_collision_nom_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_frozen_collision_nom_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_frozen_collision_LF_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_frozen_collision_LF_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        },
+        {
+          "name": "cx1101_frozen_collision_pn10_seen",
+          "kind": "test_collision",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "cx1101_frozen_collision_pn10_unseen",
+          "kind": "test_collision",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoft_shlockLF_lr1_s1_p2",
+      "family": "fwppo_reference",
+      "condition": "LF",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "1e-5",
+        "seed_index": 1
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_lr1_s1_p2_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_lr1_s1_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoft_shlockLF_lr1_s2_p2",
+      "family": "fwppo_reference",
+      "condition": "LF",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "1e-5",
+        "seed_index": 2
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_lr1_s2_p2_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_lr1_s2_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoft_shlockLF_lr1_s3_p2",
+      "family": "fwppo_reference",
+      "condition": "LF",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "1e-5",
+        "seed_index": 3
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_lr1_s3_p2_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_lr1_s3_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoft_shlockLF_s1_p2",
+      "family": "fwppo_reference",
+      "condition": "LF",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "3e-5",
+        "seed_index": 1
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_s1_p2_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_s1_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoft_shlockLF_s2_p2",
+      "family": "fwppo_reference",
+      "condition": "LF",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "3e-5",
+        "seed_index": 2
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_s2_p2_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_s2_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoft_shlockLF_s3_p2",
+      "family": "fwppo_reference",
+      "condition": "LF",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "3e-5",
+        "seed_index": 3
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_s3_p2_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_s3_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoft_shlockLF_s4_p2",
+      "family": "fwppo_reference",
+      "condition": "LF",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "3e-5",
+        "seed_index": 4
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_s4_p2_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_s4_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoft_shlockLF_s5_p2",
+      "family": "fwppo_reference",
+      "condition": "LF",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "3e-5",
+        "seed_index": 5
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_s5_p2_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_s5_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoft_shlockLF_lr10_s1_p2",
+      "family": "fwppo_reference",
+      "condition": "LF",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "1e-4",
+        "seed_index": 1
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_lr10_s1_p2_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_lr10_s1_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoft_shlockLF_lr10_s2_p2",
+      "family": "fwppo_reference",
+      "condition": "LF",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "1e-4",
+        "seed_index": 2
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_lr10_s2_p2_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_lr10_s2_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoft_shlockLF_lr10_s3_p2",
+      "family": "fwppo_reference",
+      "condition": "LF",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "1e-4",
+        "seed_index": 3
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_lr10_s3_p2_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoft_shlockLF_lr10_s3_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoft_pcl1cm_lr1_s1_p2",
+      "family": "fwppo_reference",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "1e-5",
+        "seed_index": 1
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoft_pcl1cm_lr1_s1_p2_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoft_pcl1cm_lr1_s1_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoft_pcl1cm_lr1_s2_p2",
+      "family": "fwppo_reference",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "1e-5",
+        "seed_index": 2
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoft_pcl1cm_lr1_s2_p2_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoft_pcl1cm_lr1_s2_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoft_pcl1cm_lr1_s3_p2",
+      "family": "fwppo_reference",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "1e-5",
+        "seed_index": 3
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoft_pcl1cm_lr1_s3_p2_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoft_pcl1cm_lr1_s3_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoftpcl_s1_p2",
+      "family": "fwppo_reference",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "3e-5",
+        "seed_index": 1
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoftpcl_s1_p2_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoftpcl_s1_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoftpcl_s2_p2",
+      "family": "fwppo_reference",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "3e-5",
+        "seed_index": 2
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoftpcl_s2_p2_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoftpcl_s2_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoftpcl_s3_p2",
+      "family": "fwppo_reference",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "3e-5",
+        "seed_index": 3
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoftpcl_s3_p2_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoftpcl_s3_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoftpcl_s4_p2",
+      "family": "fwppo_reference",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "3e-5",
+        "seed_index": 4
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoftpcl_s4_p2_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoftpcl_s4_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoftpcl_s5_p2",
+      "family": "fwppo_reference",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "3e-5",
+        "seed_index": 5
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoftpcl_s5_p2_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoftpcl_s5_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoft_pcl1cm_lr10_s1_p2",
+      "family": "fwppo_reference",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "1e-4",
+        "seed_index": 1
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoft_pcl1cm_lr10_s1_p2_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoft_pcl1cm_lr10_s1_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoft_pcl1cm_lr10_s2_p2",
+      "family": "fwppo_reference",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "1e-4",
+        "seed_index": 2
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoft_pcl1cm_lr10_s2_p2_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoft_pcl1cm_lr10_s2_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_ppoft_pcl1cm_lr10_s3_p2",
+      "family": "fwppo_reference",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwppo",
+        "learning_rate": "1e-4",
+        "seed_index": 3
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_ppoft_pcl1cm_lr10_s3_p2_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_ppoft_pcl1cm_lr10_s3_p2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_grpo_shlockLF_s1_p11",
+      "family": "fwgrpo_reference",
+      "condition": "LF",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "1e-5",
+        "seed_index": 1
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_grpo_shlockLF_s1_p11_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_grpo_shlockLF_s1_p11_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_grpo_shlockLF_s2_p11",
+      "family": "fwgrpo_reference",
+      "condition": "LF",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "1e-5",
+        "seed_index": 2
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_grpo_shlockLF_s2_p11_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_grpo_shlockLF_s2_p11_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_grpo_shlockLF_s3_p11",
+      "family": "fwgrpo_reference",
+      "condition": "LF",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "1e-5",
+        "seed_index": 3
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_grpo_shlockLF_s3_p11_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_grpo_shlockLF_s3_p11_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_grpo_shlockLF_lr3s1_p11",
+      "family": "fwgrpo_reference",
+      "condition": "LF",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "3e-5",
+        "seed_index": 1
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_grpo_shlockLF_lr3s1_p11_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_grpo_shlockLF_lr3s1_p11_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_grpo_shlockLF_lr3s2_p11",
+      "family": "fwgrpo_reference",
+      "condition": "LF",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "3e-5",
+        "seed_index": 2
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_grpo_shlockLF_lr3s2_p11_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_grpo_shlockLF_lr3s2_p11_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_grpo_shlockLF_lr3s3_p11",
+      "family": "fwgrpo_reference",
+      "condition": "LF",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "3e-5",
+        "seed_index": 3
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_grpo_shlockLF_lr3s3_p11_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_grpo_shlockLF_lr3s3_p11_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_grpo_shlockLF_lr10_s1_p11",
+      "family": "fwgrpo_reference",
+      "condition": "LF",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "1e-4",
+        "seed_index": 1
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_grpo_shlockLF_lr10_s1_p11_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_grpo_shlockLF_lr10_s1_p11_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_grpo_shlockLF_lr10_s2_p11",
+      "family": "fwgrpo_reference",
+      "condition": "LF",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "1e-4",
+        "seed_index": 2
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_grpo_shlockLF_lr10_s2_p11_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_grpo_shlockLF_lr10_s2_p11_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_grpo_shlockLF_lr10_s3_p11",
+      "family": "fwgrpo_reference",
+      "condition": "LF",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "1e-4",
+        "seed_index": 3
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_grpo_shlockLF_lr10_s3_p11_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_grpo_shlockLF_lr10_s3_p11_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_grpo_pcl1cm_v3_p11",
+      "family": "fwgrpo_reference",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "1e-5",
+        "seed_index": 1
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_grpo_pcl1cm_v3_p11_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_grpo_pcl1cm_v3_p11_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_grpo_pcl1cm_v3s2_p11",
+      "family": "fwgrpo_reference",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "1e-5",
+        "seed_index": 2
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_grpo_pcl1cm_v3s2_p11_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_grpo_pcl1cm_v3s2_p11_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_grpo_pcl1cm_v3s3_p11",
+      "family": "fwgrpo_reference",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "1e-5",
+        "seed_index": 3
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_grpo_pcl1cm_v3s3_p11_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_grpo_pcl1cm_v3s3_p11_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_grpo_pcl1cm_lr3_s1_p11",
+      "family": "fwgrpo_reference",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "3e-5",
+        "seed_index": 1
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_grpo_pcl1cm_lr3_s1_p11_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_grpo_pcl1cm_lr3_s1_p11_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_grpo_pcl1cm_lr3_s2_p11",
+      "family": "fwgrpo_reference",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "3e-5",
+        "seed_index": 2
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_grpo_pcl1cm_lr3_s2_p11_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_grpo_pcl1cm_lr3_s2_p11_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_grpo_pcl1cm_lr3_s3_p11",
+      "family": "fwgrpo_reference",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "3e-5",
+        "seed_index": 3
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_grpo_pcl1cm_lr3_s3_p11_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_grpo_pcl1cm_lr3_s3_p11_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_grpo_pcl1cm_lr10_s1_p11",
+      "family": "fwgrpo_reference",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "1e-4",
+        "seed_index": 1
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_grpo_pcl1cm_lr10_s1_p11_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_grpo_pcl1cm_lr10_s1_p11_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_grpo_pcl1cm_lr10_s2_p11",
+      "family": "fwgrpo_reference",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "1e-4",
+        "seed_index": 2
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_grpo_pcl1cm_lr10_s2_p11_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_grpo_pcl1cm_lr10_s2_p11_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    },
+    {
+      "name": "cx1101_ref_grpo_pcl1cm_lr10_s3_p11",
+      "family": "fwgrpo_reference",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "1e-4",
+        "seed_index": 3
+      },
+      "steps": [
+        {
+          "name": "cx1101_ref_grpo_pcl1cm_lr10_s3_p11_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "cx1101_ref_grpo_pcl1cm_lr10_s3_p11_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        }
+      ]
+    }
+  ],
+  "fixed": [
+    {
+      "name": "frozen_additional_development",
+      "family": "frozen",
+      "steps": [
+        {
+          "name": "sr1101_frozen_dev_LF25",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "sr1101_frozen_dev_LF75",
+          "kind": "dev",
+          "expected_attempts": 512
+        }
+      ]
+    },
+    {
+      "name": "sr1101_plugppo_shlockLF_lr3e3_s1",
+      "family": "res_ppo",
+      "condition": "LF",
+      "reference": {
+        "role": "selected_residual",
+        "method": "res_ppo",
+        "seed": 1
+      },
+      "steps": [
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s1_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s1_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s1_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s1_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s1_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s1_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s1_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s1_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sr1101_plugppo_shlockLF_lr3e3_s2",
+      "family": "res_ppo",
+      "condition": "LF",
+      "reference": {
+        "role": "selected_residual",
+        "method": "res_ppo",
+        "seed": 2
+      },
+      "steps": [
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s2_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s2_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s2_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s2_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s2_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s2_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s2_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s2_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sr1101_plugppo_shlockLF_lr3e3_s3",
+      "family": "res_ppo",
+      "condition": "LF",
+      "reference": {
+        "role": "selected_residual",
+        "method": "res_ppo",
+        "seed": 3
+      },
+      "steps": [
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s3_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s3_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s3_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s3_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s3_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s3_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s3_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s3_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sr1101_plugppo_shlockLF_lr3e3_s4",
+      "family": "res_ppo",
+      "condition": "LF",
+      "reference": {
+        "role": "selected_residual",
+        "method": "res_ppo",
+        "seed": 4
+      },
+      "steps": [
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s4_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s4_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s4_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s4_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s4_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s4_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s4_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s4_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sr1101_plugppo_shlockLF_lr3e3_s5",
+      "family": "res_ppo",
+      "condition": "LF",
+      "reference": {
+        "role": "selected_residual",
+        "method": "res_ppo",
+        "seed": 5
+      },
+      "steps": [
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s5_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s5_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s5_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s5_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s5_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s5_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s5_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_shlockLF_lr3e3_s5_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sr1101_plugppo_pcl1cm_lr3e3_s1",
+      "family": "res_ppo",
+      "condition": "PCL",
+      "reference": {
+        "role": "selected_residual",
+        "method": "res_ppo",
+        "seed": 1
+      },
+      "steps": [
+        {
+          "name": "sr1101_plugppo_pcl1cm_lr3e3_s1_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_pcl1cm_lr3e3_s1_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_plugppo_pcl1cm_lr3e3_s1_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_pcl1cm_lr3e3_s1_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sr1101_plugppo_pcl1cm_lr3e3_s2",
+      "family": "res_ppo",
+      "condition": "PCL",
+      "reference": {
+        "role": "selected_residual",
+        "method": "res_ppo",
+        "seed": 2
+      },
+      "steps": [
+        {
+          "name": "sr1101_plugppo_pcl1cm_lr3e3_s2_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_pcl1cm_lr3e3_s2_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_plugppo_pcl1cm_lr3e3_s2_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_pcl1cm_lr3e3_s2_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sr1101_plugppo_pcl1cm_lr3e3_s3",
+      "family": "res_ppo",
+      "condition": "PCL",
+      "reference": {
+        "role": "selected_residual",
+        "method": "res_ppo",
+        "seed": 3
+      },
+      "steps": [
+        {
+          "name": "sr1101_plugppo_pcl1cm_lr3e3_s3_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_pcl1cm_lr3e3_s3_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_plugppo_pcl1cm_lr3e3_s3_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_pcl1cm_lr3e3_s3_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sr1101_plugppo_pcl1cm_lr3e3_s4",
+      "family": "res_ppo",
+      "condition": "PCL",
+      "reference": {
+        "role": "selected_residual",
+        "method": "res_ppo",
+        "seed": 4
+      },
+      "steps": [
+        {
+          "name": "sr1101_plugppo_pcl1cm_lr3e3_s4_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_pcl1cm_lr3e3_s4_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_plugppo_pcl1cm_lr3e3_s4_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_pcl1cm_lr3e3_s4_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sr1101_plugppo_pcl1cm_lr3e3_s5",
+      "family": "res_ppo",
+      "condition": "PCL",
+      "reference": {
+        "role": "selected_residual",
+        "method": "res_ppo",
+        "seed": 5
+      },
+      "steps": [
+        {
+          "name": "sr1101_plugppo_pcl1cm_lr3e3_s5_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_pcl1cm_lr3e3_s5_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_plugppo_pcl1cm_lr3e3_s5_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_plugppo_pcl1cm_lr3e3_s5_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sr1101_pluggrpo_shlockLF_lr1e3_s1",
+      "family": "res_grpo",
+      "condition": "LF",
+      "reference": {
+        "role": "selected_residual",
+        "method": "res_grpo",
+        "seed": 1
+      },
+      "steps": [
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s1_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s1_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s1_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s1_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s1_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s1_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s1_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s1_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sr1101_pluggrpo_shlockLF_lr1e3_s2",
+      "family": "res_grpo",
+      "condition": "LF",
+      "reference": {
+        "role": "selected_residual",
+        "method": "res_grpo",
+        "seed": 2
+      },
+      "steps": [
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s2_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s2_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s2_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s2_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s2_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s2_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s2_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s2_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sr1101_pluggrpo_shlockLF_lr1e3_s3",
+      "family": "res_grpo",
+      "condition": "LF",
+      "reference": {
+        "role": "selected_residual",
+        "method": "res_grpo",
+        "seed": 3
+      },
+      "steps": [
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s3_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s3_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s3_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s3_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s3_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s3_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s3_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_pluggrpo_shlockLF_lr1e3_s3_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sr1101_pluggrpo_pcl1cm_lr1e3_s1",
+      "family": "res_grpo",
+      "condition": "PCL",
+      "reference": {
+        "role": "selected_residual",
+        "method": "res_grpo",
+        "seed": 1
+      },
+      "steps": [
+        {
+          "name": "sr1101_pluggrpo_pcl1cm_lr1e3_s1_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_pluggrpo_pcl1cm_lr1e3_s1_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_pluggrpo_pcl1cm_lr1e3_s1_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_pluggrpo_pcl1cm_lr1e3_s1_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sr1101_pluggrpo_pcl1cm_lr1e3_s2",
+      "family": "res_grpo",
+      "condition": "PCL",
+      "reference": {
+        "role": "selected_residual",
+        "method": "res_grpo",
+        "seed": 2
+      },
+      "steps": [
+        {
+          "name": "sr1101_pluggrpo_pcl1cm_lr1e3_s2_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_pluggrpo_pcl1cm_lr1e3_s2_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_pluggrpo_pcl1cm_lr1e3_s2_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_pluggrpo_pcl1cm_lr1e3_s2_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sr1101_pluggrpo_pcl1cm_lr1e3_s3",
+      "family": "res_grpo",
+      "condition": "PCL",
+      "reference": {
+        "role": "selected_residual",
+        "method": "res_grpo",
+        "seed": 3
+      },
+      "steps": [
+        {
+          "name": "sr1101_pluggrpo_pcl1cm_lr1e3_s3_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_pluggrpo_pcl1cm_lr1e3_s3_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_pluggrpo_pcl1cm_lr1e3_s3_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_pluggrpo_pcl1cm_lr1e3_s3_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sr1101_fsf_LF_s1",
+      "family": "fwgrpo_matched_reference",
+      "condition": "LF",
+      "reference": {
+        "role": "matched_fullweight",
+        "method": "fwgrpo_matched_reference",
+        "seed": 1
+      },
+      "steps": [
+        {
+          "name": "sr1101_fsf_LF_s1_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "sr1101_fsf_LF_s1_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "sr1101_fsf_LF_s1_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_fsf_LF_s1_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_fsf_LF_s1_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_fsf_LF_s1_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_fsf_LF_s1_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_fsf_LF_s1_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_fsf_LF_s1_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_fsf_LF_s1_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sr1101_fsf_LF_s2",
+      "family": "fwgrpo_matched_reference",
+      "condition": "LF",
+      "reference": {
+        "role": "matched_fullweight",
+        "method": "fwgrpo_matched_reference",
+        "seed": 2
+      },
+      "steps": [
+        {
+          "name": "sr1101_fsf_LF_s2_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "sr1101_fsf_LF_s2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "sr1101_fsf_LF_s2_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_fsf_LF_s2_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_fsf_LF_s2_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_fsf_LF_s2_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_fsf_LF_s2_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_fsf_LF_s2_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_fsf_LF_s2_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_fsf_LF_s2_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sr1101_fsf_LF_s3",
+      "family": "fwgrpo_matched_reference",
+      "condition": "LF",
+      "reference": {
+        "role": "matched_fullweight",
+        "method": "fwgrpo_matched_reference",
+        "seed": 3
+      },
+      "steps": [
+        {
+          "name": "sr1101_fsf_LF_s3_dev_LF",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "sr1101_fsf_LF_s3_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "sr1101_fsf_LF_s3_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_fsf_LF_s3_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_fsf_LF_s3_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_fsf_LF_s3_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_fsf_LF_s3_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_fsf_LF_s3_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_fsf_LF_s3_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_fsf_LF_s3_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sr1101_fsf_PCL_s1",
+      "family": "fwgrpo_matched_reference",
+      "condition": "PCL",
+      "reference": {
+        "role": "matched_fullweight",
+        "method": "fwgrpo_matched_reference",
+        "seed": 1
+      },
+      "steps": [
+        {
+          "name": "sr1101_fsf_PCL_s1_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "sr1101_fsf_PCL_s1_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "sr1101_fsf_PCL_s1_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_fsf_PCL_s1_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_fsf_PCL_s1_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_fsf_PCL_s1_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sr1101_fsf_PCL_s2",
+      "family": "fwgrpo_matched_reference",
+      "condition": "PCL",
+      "reference": {
+        "role": "matched_fullweight",
+        "method": "fwgrpo_matched_reference",
+        "seed": 2
+      },
+      "steps": [
+        {
+          "name": "sr1101_fsf_PCL_s2_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "sr1101_fsf_PCL_s2_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "sr1101_fsf_PCL_s2_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_fsf_PCL_s2_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_fsf_PCL_s2_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_fsf_PCL_s2_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sr1101_fsf_PCL_s3",
+      "family": "fwgrpo_matched_reference",
+      "condition": "PCL",
+      "reference": {
+        "role": "matched_fullweight",
+        "method": "fwgrpo_matched_reference",
+        "seed": 3
+      },
+      "steps": [
+        {
+          "name": "sr1101_fsf_PCL_s3_dev_pn10",
+          "kind": "dev",
+          "expected_attempts": 512
+        },
+        {
+          "name": "sr1101_fsf_PCL_s3_dev_nom",
+          "kind": "dev",
+          "expected_attempts": 2048
+        },
+        {
+          "name": "sr1101_fsf_PCL_s3_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_fsf_PCL_s3_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sr1101_fsf_PCL_s3_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sr1101_fsf_PCL_s3_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    }
+  ],
+  "selected": [
+    {
+      "name": "sf1102_fwgrpo_LF_1em5_s1",
+      "family": "fwgrpo",
+      "condition": "LF",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "1e-5",
+        "seed_index": 1
+      },
+      "steps": [
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s1_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s1_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s1_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s1_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s1_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s1_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s1_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s1_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sf1102_fwgrpo_LF_1em5_s2",
+      "family": "fwgrpo",
+      "condition": "LF",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "1e-5",
+        "seed_index": 2
+      },
+      "steps": [
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s2_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s2_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s2_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s2_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s2_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s2_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s2_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s2_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sf1102_fwgrpo_LF_1em5_s3",
+      "family": "fwgrpo",
+      "condition": "LF",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "1e-5",
+        "seed_index": 3
+      },
+      "steps": [
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s3_test_LF_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s3_test_LF_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s3_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s3_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s3_test_LF25_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s3_test_LF25_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s3_test_LF75_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sf1102_fwgrpo_LF_1em5_s3_test_LF75_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sf1102_fwgrpo_PCL_1em5_s1",
+      "family": "fwgrpo",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "1e-5",
+        "seed_index": 1
+      },
+      "steps": [
+        {
+          "name": "sf1102_fwgrpo_PCL_1em5_s1_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sf1102_fwgrpo_PCL_1em5_s1_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sf1102_fwgrpo_PCL_1em5_s1_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sf1102_fwgrpo_PCL_1em5_s1_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sf1102_fwgrpo_PCL_1em5_s2",
+      "family": "fwgrpo",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "1e-5",
+        "seed_index": 2
+      },
+      "steps": [
+        {
+          "name": "sf1102_fwgrpo_PCL_1em5_s2_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sf1102_fwgrpo_PCL_1em5_s2_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sf1102_fwgrpo_PCL_1em5_s2_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sf1102_fwgrpo_PCL_1em5_s2_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    },
+    {
+      "name": "sf1102_fwgrpo_PCL_1em5_s3",
+      "family": "fwgrpo",
+      "condition": "PCL",
+      "reference": {
+        "method": "fwgrpo",
+        "learning_rate": "1e-5",
+        "seed_index": 3
+      },
+      "steps": [
+        {
+          "name": "sf1102_fwgrpo_PCL_1em5_s3_test_pn10_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sf1102_fwgrpo_PCL_1em5_s3_test_pn10_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        },
+        {
+          "name": "sf1102_fwgrpo_PCL_1em5_s3_test_nom_seen",
+          "kind": "test",
+          "expected_attempts": 1128
+        },
+        {
+          "name": "sf1102_fwgrpo_PCL_1em5_s3_test_nom_unseen",
+          "kind": "test",
+          "expected_attempts": 800
+        }
+      ]
+    }
+  ]
+}
