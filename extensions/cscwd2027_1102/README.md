@@ -1,6 +1,6 @@
 # CSCWD extension dated 2 November 2026
 
-Reproduction code and official per-attempt success flags for the completed recovery–retention extension used by the CSCWD manuscript v4.
+Reproduction code and official per-attempt success flags for the completed recovery–retention extension used by the CSCWD manuscripts v4 and v5.
 
 ## Recompute on CPU
 
@@ -28,3 +28,9 @@ Completed training: 22 runs, 426,496 interactions. PPO/GRPO add 2×10⁻⁵; mat
 ## Figures and manuscript
 
 See [`../../manuscript/cscwd2027_v4/`](../../manuscript/cscwd2027_v4/) for v4 plotting and Word generation. [`MANIFEST.sha256`](MANIFEST.sha256) lists this release's files using paths relative to the repository root.
+
+## Numeric-validation update
+
+The recomputation check allows only negligible float roundoff (absolute tolerance 1e-8; relative tolerance 1e-10), while counts, labels, keys and list lengths remain exact. `python extensions/cscwd2027_1102/test_numeric_validation.py` checks accepted quantile noise and rejected material errors. The expected results are unchanged. `research_plugin_rl.py` also retains exploratory SAC/DSRL options; only the PPO/GRPO modes recorded in the command manifest contribute to these reported comparisons.
+
+The latest manuscript source is [`../../manuscript/cscwd2027_v5/`](../../manuscript/cscwd2027_v5/). New existing-data curve analyses are in [`review_v5/`](review_v5/).

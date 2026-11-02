@@ -1,5 +1,9 @@
 # Adapting Pretrained Dexterous Grasping Policies to Deployment Shifts
 
+## CSCWD manuscript v5 revision
+
+The latest [manuscript and supplementary source](manuscript/cscwd2027_v5/) and [existing-data curve analysis](extensions/cscwd2027_1102/review_v5/) add recovery–retention curve summaries and run-level uncertainty. The extension's float comparison now tolerates negligible SciPy quantile roundoff while still rejecting changes in counts or substantive results. Original numerical records and the v4 source remain available.
+
 ## CSCWD 2027 reproduction update — 2 November 2026
 
 The code for **Recovery–Retention Trade-offs in Dexterous Grasping Policy Adaptation** (manuscript v4) is now in:

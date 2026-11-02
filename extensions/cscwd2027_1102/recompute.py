@@ -4,6 +4,7 @@ from fractions import Fraction
 from collections import defaultdict
 import argparse,csv,gzip,hashlib,json,math,statistics
 from scipy.stats import t
+from numeric_validation import assert_record_close, ABS_TOL, REL_TOL
 R=Path(__file__).resolve().parent
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--out',type=Path,default=R/'reproduced')
@@ -65,7 +66,8 @@ def development():
         feasible=[x for x in grid if x['method']==method and x['feasible']]
         selected[method]=min(feasible,key=lambda x:(-Fraction(x['objective_exact']),Fraction(x['worst_loss_exact']),float(x['learning_rate'])))['learning_rate']
     expected=read(R/'data/selection_record.json')
-    assert grid==expected['expanded_grid'] and selected==expected['selected_full_weight_learning_rates']
+    assert_record_close(grid,expected['expanded_grid'],'development.grid')
+    assert selected==expected['selected_full_weight_learning_rates']
     assert str(baseline)==expected['frozen_dev_exact']
     result=dict(expected,expanded_grid=grid,selected_full_weight_learning_rates=selected)
     dump('development_selection.json',result);csv_table('development_per_run.csv',rows);csv_table('development_grid.csv',grid)
@@ -156,12 +158,12 @@ def main():
     dump("contrasts.json", contrasts)
 
     expected=read(R/'results/numbers.json')
-    assert frozen==expected['frozen_test_success_pct']
-    assert summary==expected['test_summary']
-    assert contrasts==expected['contrasts']
+    errors=[assert_record_close(frozen,expected['frozen_test_success_pct'],'test.frozen'),
+            assert_record_close(summary,expected['test_summary'],'test.summary'),
+            assert_record_close(contrasts,expected['contrasts'],'test.contrasts')]
     rebuilt=dict(expected,frozen_test_success_pct=frozen,development_selection=selection,test_summary=summary,contrasts=contrasts)
     dump('numbers.json',rebuilt)
     assert sum(x['n'] for k,x in records.items() if k!='main:preflight_frozen_dev_nom_r2')==565072
-    dump('verification.json',dict(passed=True,formal_evaluations=543,formal_attempts=565072,contrasts=len(contrasts),development_selection_recomputed=True,per_attempt_flags=True))
+    dump('verification.json',dict(passed=True,formal_evaluations=543,formal_attempts=565072,contrasts=len(contrasts),development_selection_recomputed=True,per_attempt_flags=True,float_abs_tolerance=ABS_TOL,float_rel_tolerance=REL_TOL,max_float_difference=max(errors)))
     print(f'Reproduced development selection, 40-checkpoint drift, {len(model_rows)} run-condition rows and {len(contrasts)} contrasts. Output: {A}')
 if __name__=='__main__':main()

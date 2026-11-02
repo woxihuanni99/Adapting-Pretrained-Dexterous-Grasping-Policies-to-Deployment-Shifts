@@ -18,3 +18,7 @@ extensions/cscwd2027_1102/reproduced/
 manuscript/cscwd2027_v4/output/
 manuscript/cscwd2027_v4/mplconfig/
 manuscript/cscwd2027_v4/figures/figures_provenance_v4.json
+
+# CSCWD v5 local generation
+manuscript/cscwd2027_v5/output/
+extensions/cscwd2027_1102/review_v5/mplconfig/
