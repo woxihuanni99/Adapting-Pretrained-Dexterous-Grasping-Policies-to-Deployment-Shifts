@@ -1,0 +1,170 @@
+{
+  "sources": [
+    {
+      "path": "extensions/cscwd2027_1102/review_v5/numbers.json",
+      "sha256": "6e33841a821de162c12dd975213edc9f6f7a392c3b2f83e0edfb436658466813"
+    },
+    {
+      "path": "analysis/numbers.json",
+      "sha256": "e9bad131e59ca665b632623c14dbde5593aa9cc6a251566336c1be2b429c6ca8"
+    },
+    {
+      "path": "extensions/cscwd2027_1102/results/numbers.json",
+      "sha256": "0941a4387984ff5ee0a370bd330fec50d91d4790452d23031fd492af60162cfc"
+    }
+  ],
+  "record_rows": [
+    {
+      "batch": "Initial",
+      "label": "Residual GRPO",
+      "parameters": "state-dependent",
+      "success": {
+        "n": 3,
+        "mean": 64.24571513002364,
+        "sd": 2.2130221297043646,
+        "CI95": [
+          58.74826340075512,
+          69.74316685929216
+        ],
+        "runs": [
+          62.8209219858156,
+          66.79521276595746,
+          63.12101063829787
+        ]
+      },
+      "loss": {
+        "n": 3,
+        "mean": 4.93203309692671,
+        "sd": 0.88549777978763,
+        "CI95": [
+          2.7323346685123284,
+          7.131731525341092
+        ],
+        "runs": [
+          4.890070921985812,
+          4.068262411347511,
+          5.8377659574468055
+        ]
+      },
+      "mean_le_5": true,
+      "upper_CI_le_5": false
+    },
+    {
+      "batch": "Initial",
+      "label": "Constant + scale (48)",
+      "parameters": "48",
+      "success": {
+        "n": 3,
+        "mean": 67.1091903073286,
+        "sd": 0.8106136831201306,
+        "CI95": [
+          65.09551428745401,
+          69.1228663272032
+        ],
+        "runs": [
+          67.75886524822695,
+          67.36790780141844,
+          66.20079787234042
+        ]
+      },
+      "loss": {
+        "n": 3,
+        "mean": 4.083924349881796,
+        "sd": 0.12639923850943702,
+        "CI95": [
+          3.76993123476787,
+          4.397917464995722
+        ],
+        "runs": [
+          3.962765957446812,
+          4.074024822695033,
+          4.214982269503542
+        ]
+      },
+      "mean_le_5": true,
+      "upper_CI_le_5": true
+    },
+    {
+      "batch": "Initial",
+      "label": "Scaled shift (24)",
+      "parameters": "24",
+      "success": {
+        "n": 3,
+        "mean": 67.58880023640661,
+        "sd": 0.4344542256389225,
+        "CI95": [
+          66.50955611048106,
+          68.66804436233217
+        ],
+        "runs": [
+          67.44414893617021,
+          68.07712765957447,
+          67.24512411347517
+        ]
+      },
+      "loss": {
+        "n": 3,
+        "mean": 4.528664302600472,
+        "sd": 0.6549388255226292,
+        "CI95": [
+          2.9017060672504007,
+          6.155622537950543
+        ],
+        "runs": [
+          5.202570921985805,
+          3.8945035460992927,
+          4.488918439716317
+        ]
+      },
+      "mean_le_5": true,
+      "upper_CI_le_5": false
+    },
+    {
+      "batch": "Repeat",
+      "label": "Residual GRPO",
+      "parameters": "state-dependent",
+      "success": {
+        "n": 3,
+        "mean": 64.1744976359338,
+        "sd": 2.4728288343048757,
+        "CI95": [
+          58.03165027400958,
+          70.31734499785803
+        ],
+        "runs": [
+          62.1436170212766,
+          66.92819148936171,
+          63.45168439716312
+        ]
+      },
+      "loss": {
+        "n": 3,
+        "mean": 5.213504728132388,
+        "sd": 0.6411680589236186,
+        "CI95": [
+          3.620754973410207,
+          6.806254482854568
+        ],
+        "runs": [
+          4.999113475177305,
+          4.7070035460992905,
+          5.934397163120567
+        ]
+      },
+      "mean_le_5": false,
+      "upper_CI_le_5": false
+    }
+  ],
+  "repeat_evaluation": {
+    "initial_frozen_nominal_pct": 90.97429078014184,
+    "repeat_frozen_nominal_pct": 91.3209219858156,
+    "frozen_change_pp": 0.34663120567375927,
+    "initial_resGRPO_loss_pp": 4.93203309692671,
+    "repeat_resGRPO_loss_pp": 5.213504728132388,
+    "loss_change_pp": 0.28147163120567775,
+    "implied_adapted_nominal_change_pp": 0.06515957446808329
+  },
+  "interpretation": "Keep each loss with its own evaluation reference. Report threshold sensitivity without declaring a robust pass/fail ranking across batches. Compact controls have not been evaluated in the repeat batch.",
+  "new_training": 0,
+  "new_simulation": 0
+}

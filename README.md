@@ -1,6 +1,10 @@
 # Adapting Pretrained Dexterous Grasping Policies to Deployment Shifts
 
-## Current CSCWD manuscript: v9
+## Current CSCWD manuscript: v10
+
+The [v10 builder](manuscript/cscwd2027_v10/) foregrounds compact correction and explains retention near the five-point boundary. [Review calculations](extensions/cscwd2027_1102/review_v10/) preserve each evaluation source and do not impose a cross-batch acceptance ranking. Original numerical tables and tests remain unchanged. No new GPU experiment is used.
+
+## CSCWD manuscript v9 (previous)
 
 The [v9 builder](manuscript/cscwd2027_v9/) distinguishes fixed-policy evaluation, development selection and retention-based test review. [Descriptive checks](extensions/cscwd2027_1102/review_v9/) use the existing same-server LF results. Original scientific tables, tests and numerical records are preserved; there is no new GPU experiment or supplementary-file dependency.
 
