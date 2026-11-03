@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Source for the CSCWD manuscript v14 and its reproducibility package."
+title: "Small, Reviewable Corrections for Adapting a Pretrained Dexterous Grasp Planner"
+type: software
+version: "cscwd-v14-20261103"
+date-released: 2026-11-03
+authors:
+  - family-names: Lan
+    given-names: Haoze
+  - family-names: Yuan
+    given-names: Yongbin
+repository-code: "https://github.com/woxihuanni99/Adapting-Pretrained-Dexterous-Grasping-Policies-to-Deployment-Shifts"
+license: MIT

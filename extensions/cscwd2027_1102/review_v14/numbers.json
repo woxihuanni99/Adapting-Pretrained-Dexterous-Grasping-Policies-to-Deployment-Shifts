@@ -1,0 +1,56 @@
+{
+  "original_selection_source_SHA256": "58771720ab786bae30c4f079c43d849b1a8358bc23d21ce83ed6af7a2a8bd8bd",
+  "frozen_dev": 0.88623046875,
+  "selected_development": {
+    "full_ppo": {
+      "rate": "1e-5",
+      "LF": {
+        "loss_pp": 0.341796875,
+        "n": 3
+      },
+      "PCL": {
+        "loss_pp": 0.895182291666663,
+        "n": 3
+      }
+    },
+    "full_grpo": {
+      "rate": "1e-5",
+      "LF": {
+        "loss_pp": -0.45572916666666297,
+        "n": 3
+      },
+      "PCL": {
+        "loss_pp": 2.701822916666663,
+        "n": 3
+      }
+    },
+    "res_ppo": {
+      "rate": "3e-3",
+      "LF": {
+        "loss_pp": 4.111328125000002,
+        "n": 5
+      },
+      "PCL": {
+        "loss_pp": 0.9863281250000022,
+        "n": 5
+      }
+    },
+    "res_grpo": {
+      "rate": "1e-3",
+      "LF": {
+        "loss_pp": 3.580729166666663,
+        "n": 3
+      },
+      "PCL": {
+        "loss_pp": 1.041666666666663,
+        "n": 3
+      }
+    }
+  },
+  "RFJ3_scale": 0.5558702945709229,
+  "raw_selected_rate": 0.003,
+  "scaled_selected_rate": 0.03,
+  "scaled_to_raw_Adam_output_multiplier": 5.5587029457092285,
+  "new_training": 0,
+  "new_simulation": 0
+}

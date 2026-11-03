@@ -1,0 +1,30 @@
+{
+  "checked_date": "2026-11-03",
+  "references": [
+    {
+      "number": 3,
+      "title": "DemoGrasp: Universal Dexterous Grasping from a Single Demonstration",
+      "venue": "ICLR 2026",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/699c5a2bb87a8aa32c4ad541d9997361-Abstract-Conference.html"
+    },
+    {
+      "number": 17,
+      "title": "RFS: Reinforcement Learning with Residual Flow Steering for Dexterous Manipulation",
+      "venue": "ICLR 2026",
+      "official_listing": "https://iclr.cc/Downloads/2026",
+      "author_page": "https://weirdlabuw.github.io/rfs/"
+    },
+    {
+      "number": 22,
+      "title": "Residual Fault Adaptation for Dexterous In-Hand Manipulation Under Runtime Joint Faults",
+      "arxiv": "2609.17404",
+      "submitted": "2026-09-15",
+      "url": "https://arxiv.org/abs/2609.17404"
+    }
+  ],
+  "collision_motivation": {
+    "source": "DemoGrasp, Section 3.3",
+    "url": "https://arxiv.org/html/2509.22149v1",
+    "reason": "Allow fingers to reach beneath flat objects through contact-tolerant training."
+  }
+}

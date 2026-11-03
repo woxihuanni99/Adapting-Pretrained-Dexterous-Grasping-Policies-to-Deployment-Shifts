@@ -1,6 +1,10 @@
 # Adapting Pretrained Dexterous Grasping Policies to Deployment Shifts
 
-## Current CSCWD manuscript: v12
+## Current CSCWD manuscript: v14
+
+The [v14 source patch](manuscript/cscwd2027_v14/) uses the supplied v13 and leads with compact correction as a capacity baseline for reference-lock recovery. [Source checks and figure provenance](extensions/cscwd2027_1102/review_v14/) support its short reporting protocol and development-loss calculations. Tables, tests and original observations are preserved.
+
+## CSCWD manuscript v12 (previous)
 
 The [v12 source patch](manuscript/cscwd2027_v12/) retains the supplied v11 structure, figures and table-property fix. It keeps strong empirical findings while removing untested causal/equivalence claims. [Checkpoint diagnostics](extensions/cscwd2027_1102/review_v12/) reconstruct the 51 pooled reference-lock records. Original tables, tests and data remain unchanged.
 

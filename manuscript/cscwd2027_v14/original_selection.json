@@ -1,0 +1,869 @@
+{
+ "stage": "select",
+ "N0_frozen_2048": 0.88623046875,
+ "F_frozen_fault": {
+  "LF": 0.15234375,
+  "PCL": 0.673828125
+ },
+ "trigger_list": [
+  [
+   "full_ppo",
+   "3e-5"
+  ],
+  [
+   "res_ppo",
+   "3e-3"
+  ],
+  [
+   "res_grpo",
+   "3e-3"
+  ]
+ ],
+ "methods": {
+  "full_grpo": {
+   "table": {
+    "1e-5": {
+     "LF": {
+      "seeds": [
+       "shlockLFgrpos1",
+       "shlockLFgrpos2",
+       "shlockLFgrpos3"
+      ],
+      "N_seeds": [
+       0.8984375,
+       0.88525390625,
+       0.888671875
+      ],
+      "S_seeds": [
+       0.26171875,
+       0.267578125,
+       0.2578125
+      ],
+      "N": 0.8907877604166666,
+      "S": 0.2623697916666667,
+      "dN": 0.00455729166666663,
+      "critical": false
+     },
+     "PCL": {
+      "seeds": [
+       "pcl1cms1",
+       "pcl1cms2",
+       "pcl1cms3"
+      ],
+      "N_seeds": [
+       0.8564453125,
+       0.86181640625,
+       0.859375
+      ],
+      "S_seeds": [
+       0.794921875,
+       0.8203125,
+       0.80078125
+      ],
+      "N": 0.8592122395833334,
+      "S": 0.8053385416666666,
+      "dN": -0.02701822916666663,
+      "critical": false
+     }
+    },
+    "3e-5": {
+     "LF": {
+      "seeds": [
+       "shlockLFgrpolr3s1",
+       "shlockLFgrpolr3s2",
+       "shlockLFgrpolr3s3"
+      ],
+      "N_seeds": [
+       0.82080078125,
+       0.7861328125,
+       0.79833984375
+      ],
+      "S_seeds": [
+       0.390625,
+       0.48828125,
+       0.35546875
+      ],
+      "N": 0.8017578125,
+      "S": 0.4114583333333333,
+      "dN": -0.08447265625,
+      "critical": false
+     },
+     "PCL": {
+      "seeds": [
+       "pcl1cmgrpolr3s1",
+       "pcl1cmgrpolr3s2",
+       "pcl1cmgrpolr3s3"
+      ],
+      "N_seeds": [
+       0.83203125,
+       0.8232421875,
+       0.81103515625
+      ],
+      "S_seeds": [
+       0.802734375,
+       0.833984375,
+       0.818359375
+      ],
+      "N": 0.8221028645833334,
+      "S": 0.818359375,
+      "dN": -0.06412760416666663,
+      "critical": false
+     }
+    },
+    "1e-4": {
+     "LF": {
+      "seeds": [
+       "shlockLFgrpolr10s1",
+       "shlockLFgrpolr10s2",
+       "shlockLFgrpolr10s3"
+      ],
+      "N_seeds": [
+       0.4970703125,
+       0.623046875,
+       0.72998046875
+      ],
+      "S_seeds": [
+       0.416015625,
+       0.662109375,
+       0.53515625
+      ],
+      "N": 0.61669921875,
+      "S": 0.5377604166666666,
+      "dN": -0.26953125,
+      "critical": false
+     },
+     "PCL": {
+      "seeds": [
+       "pcl1cmgrpolr10s1",
+       "pcl1cmgrpolr10s2",
+       "pcl1cmgrpolr10s3"
+      ],
+      "N_seeds": [
+       0.77392578125,
+       0.60791015625,
+       0.7734375
+      ],
+      "S_seeds": [
+       0.796875,
+       0.611328125,
+       0.69921875
+      ],
+      "N": 0.7184244791666666,
+      "S": 0.7024739583333334,
+      "dN": -0.16780598958333337,
+      "critical": false
+     }
+    }
+   },
+   "d05": {
+    "shared_lr": "1e-5",
+    "objective": 0.5338541666666666,
+    "sensitivity_recovery_ratio_lr": "1e-5",
+    "per_condition_reference": {
+     "LF": "1e-5",
+     "PCL": "1e-5"
+    }
+   },
+   "d10": {
+    "shared_lr": "3e-5",
+    "objective": 0.6149088541666666,
+    "sensitivity_recovery_ratio_lr": "3e-5",
+    "per_condition_reference": {
+     "LF": "3e-5",
+     "PCL": "3e-5"
+    }
+   },
+   "switch_LF": {
+    "keep_main_config": "1e-5",
+    "unconstrained_dev_best": "1e-4"
+   }
+  },
+  "full_ppo": {
+   "table": {
+    "1e-5": {
+     "LF": {
+      "seeds": [
+       "shlockLFppolr1s1",
+       "shlockLFppolr1s2",
+       "shlockLFppolr1s3"
+      ],
+      "N_seeds": [
+       0.88720703125,
+       0.8828125,
+       0.87841796875
+      ],
+      "S_seeds": [
+       0.25390625,
+       0.26171875,
+       0.279296875
+      ],
+      "N": 0.8828125,
+      "S": 0.2649739583333333,
+      "dN": -0.00341796875,
+      "critical": false
+     },
+     "PCL": {
+      "seeds": [
+       "pcl1cmppolr1s1",
+       "pcl1cmppolr1s2",
+       "pcl1cmppolr1s3"
+      ],
+      "N_seeds": [
+       0.875,
+       0.87451171875,
+       0.88232421875
+      ],
+      "S_seeds": [
+       0.779296875,
+       0.7734375,
+       0.74609375
+      ],
+      "N": 0.8772786458333334,
+      "S": 0.7662760416666666,
+      "dN": -0.00895182291666663,
+      "critical": false
+     }
+    },
+    "3e-5": {
+     "LF": {
+      "seeds": [
+       "shlockLFppos1",
+       "shlockLFppos2",
+       "shlockLFppos3",
+       "shlockLFppos4",
+       "shlockLFppos5"
+      ],
+      "N_seeds": [
+       0.86376953125,
+       0.84619140625,
+       0.83935546875,
+       0.87841796875,
+       0.8212890625
+      ],
+      "S_seeds": [
+       0.427734375,
+       0.330078125,
+       0.53125,
+       0.46484375,
+       0.529296875
+      ],
+      "N": 0.8498046875,
+      "S": 0.456640625,
+      "dN": -0.036425781249999956,
+      "critical": false
+     },
+     "PCL": {
+      "seeds": [
+       "ppopcls1",
+       "ppopcls2",
+       "ppopcls3",
+       "ppopcls4",
+       "ppopcls5"
+      ],
+      "N_seeds": [
+       0.830078125,
+       0.8095703125,
+       0.86181640625,
+       0.8388671875,
+       0.8310546875
+      ],
+      "S_seeds": [
+       0.818359375,
+       0.765625,
+       0.728515625,
+       0.81640625,
+       0.7734375
+      ],
+      "N": 0.83427734375,
+      "S": 0.78046875,
+      "dN": -0.051953125000000044,
+      "critical": true
+     }
+    },
+    "1e-4": {
+     "LF": {
+      "seeds": [
+       "shlockLFppolr10s1",
+       "shlockLFppolr10s2",
+       "shlockLFppolr10s3"
+      ],
+      "N_seeds": [
+       0.576171875,
+       0.56982421875,
+       0.47021484375
+      ],
+      "S_seeds": [
+       0.49609375,
+       0.42578125,
+       0.388671875
+      ],
+      "N": 0.5387369791666666,
+      "S": 0.4368489583333333,
+      "dN": -0.34749348958333337,
+      "critical": false
+     },
+     "PCL": {
+      "seeds": [
+       "pcl1cmppolr10s1",
+       "pcl1cmppolr10s2",
+       "pcl1cmppolr10s3"
+      ],
+      "N_seeds": [
+       0.66015625,
+       0.66796875,
+       0.47314453125
+      ],
+      "S_seeds": [
+       0.65234375,
+       0.669921875,
+       0.603515625
+      ],
+      "N": 0.6004231770833334,
+      "S": 0.6419270833333334,
+      "dN": -0.28580729166666663,
+      "critical": false
+     }
+    }
+   },
+   "d05": {
+    "shared_lr": "1e-5",
+    "objective": 0.515625,
+    "sensitivity_recovery_ratio_lr": "1e-5",
+    "per_condition_reference": {
+     "LF": "3e-5",
+     "PCL": "1e-5"
+    }
+   },
+   "d10": {
+    "shared_lr": "3e-5",
+    "objective": 0.6185546875000001,
+    "sensitivity_recovery_ratio_lr": "3e-5",
+    "per_condition_reference": {
+     "LF": "3e-5",
+     "PCL": "3e-5"
+    }
+   },
+   "switch_LF": {
+    "keep_main_config": "1e-5",
+    "unconstrained_dev_best": "3e-5"
+   }
+  },
+  "res_ppo": {
+   "table": {
+    "1e-4": {
+     "LF": {
+      "seeds": [
+       "shlockLFplugppolr1e4s1",
+       "shlockLFplugppolr1e4s2",
+       "shlockLFplugppolr1e4s3"
+      ],
+      "N_seeds": [
+       0.8916015625,
+       0.90283203125,
+       0.90087890625
+      ],
+      "S_seeds": [
+       0.212890625,
+       0.27734375,
+       0.25390625
+      ],
+      "N": 0.8984375,
+      "S": 0.248046875,
+      "dN": 0.01220703125,
+      "critical": false
+     },
+     "PCL": {
+      "seeds": [
+       "pcl1cmplugppolr1e4s1",
+       "pcl1cmplugppolr1e4s2",
+       "pcl1cmplugppolr1e4s3"
+      ],
+      "N_seeds": [
+       0.8876953125,
+       0.89306640625,
+       0.89208984375
+      ],
+      "S_seeds": [
+       0.71484375,
+       0.689453125,
+       0.69140625
+      ],
+      "N": 0.8909505208333334,
+      "S": 0.6985677083333334,
+      "dN": 0.00472005208333337,
+      "critical": false
+     }
+    },
+    "3e-4": {
+     "LF": {
+      "seeds": [
+       "shlockLFplugppos1",
+       "shlockLFplugppos2",
+       "shlockLFplugppos3"
+      ],
+      "N_seeds": [
+       0.89013671875,
+       0.88720703125,
+       0.8916015625
+      ],
+      "S_seeds": [
+       0.26953125,
+       0.306640625,
+       0.306640625
+      ],
+      "N": 0.8896484375,
+      "S": 0.2942708333333333,
+      "dN": 0.00341796875,
+      "critical": false
+     },
+     "PCL": {
+      "seeds": [
+       "pcl1cmplugppos1",
+       "pcl1cmplugppos2",
+       "pcl1cmplugppos3"
+      ],
+      "N_seeds": [
+       0.8876953125,
+       0.900390625,
+       0.8916015625
+      ],
+      "S_seeds": [
+       0.716796875,
+       0.70703125,
+       0.7265625
+      ],
+      "N": 0.8932291666666666,
+      "S": 0.716796875,
+      "dN": 0.00699869791666663,
+      "critical": false
+     }
+    },
+    "1e-3": {
+     "LF": {
+      "seeds": [
+       "shlockLFplugppolr1e3s1",
+       "shlockLFplugppolr1e3s2",
+       "shlockLFplugppolr1e3s3"
+      ],
+      "N_seeds": [
+       0.8720703125,
+       0.87890625,
+       0.888671875
+      ],
+      "S_seeds": [
+       0.466796875,
+       0.453125,
+       0.494140625
+      ],
+      "N": 0.8798828125,
+      "S": 0.4713541666666667,
+      "dN": -0.00634765625,
+      "critical": false
+     },
+     "PCL": {
+      "seeds": [
+       "pcl1cmplugppolr1e3s1",
+       "pcl1cmplugppolr1e3s2",
+       "pcl1cmplugppolr1e3s3"
+      ],
+      "N_seeds": [
+       0.87841796875,
+       0.8916015625,
+       0.8935546875
+      ],
+      "S_seeds": [
+       0.712890625,
+       0.716796875,
+       0.724609375
+      ],
+      "N": 0.8878580729166666,
+      "S": 0.7180989583333334,
+      "dN": 0.0016276041666666297,
+      "critical": false
+     }
+    },
+    "3e-3": {
+     "LF": {
+      "seeds": [
+       "shlockLFplugppolr3e3s1",
+       "shlockLFplugppolr3e3s2",
+       "shlockLFplugppolr3e3s3",
+       "shlockLFplugppolr3e3s4",
+       "shlockLFplugppolr3e3s5"
+      ],
+      "N_seeds": [
+       0.8310546875,
+       0.8603515625,
+       0.833984375,
+       0.83984375,
+       0.8603515625
+      ],
+      "S_seeds": [
+       0.677734375,
+       0.62890625,
+       0.65625,
+       0.623046875,
+       0.5390625
+      ],
+      "N": 0.8451171875,
+      "S": 0.625,
+      "dN": -0.04111328125000002,
+      "critical": true
+     },
+     "PCL": {
+      "seeds": [
+       "pcl1cmplugppolr3e3s1",
+       "pcl1cmplugppolr3e3s2",
+       "pcl1cmplugppolr3e3s3",
+       "pcl1cmplugppolr3e3s4",
+       "pcl1cmplugppolr3e3s5"
+      ],
+      "N_seeds": [
+       0.89404296875,
+       0.8720703125,
+       0.86669921875,
+       0.87255859375,
+       0.87646484375
+      ],
+      "S_seeds": [
+       0.6953125,
+       0.75390625,
+       0.7421875,
+       0.73828125,
+       0.73828125
+      ],
+      "N": 0.8763671875,
+      "S": 0.73359375,
+      "dN": -0.009863281250000022,
+      "critical": false
+     }
+    },
+    "1e-2": {
+     "LF": {
+      "seeds": [
+       "shlockLFplugppolr1e2s1",
+       "shlockLFplugppolr1e2s2",
+       "shlockLFplugppolr1e2s3"
+      ],
+      "N_seeds": [
+       0.00439453125,
+       0.00244140625,
+       0.00048828125
+      ],
+      "S_seeds": [
+       0.00390625,
+       0.0,
+       0.0
+      ],
+      "N": 0.00244140625,
+      "S": 0.0013020833333333333,
+      "dN": -0.8837890625,
+      "critical": false
+     },
+     "PCL": {
+      "seeds": [
+       "pcl1cmplugppolr1e2s1",
+       "pcl1cmplugppolr1e2s2",
+       "pcl1cmplugppolr1e2s3"
+      ],
+      "N_seeds": [
+       0.00048828125,
+       0.00048828125,
+       0.00048828125
+      ],
+      "S_seeds": [
+       0.001953125,
+       0.001953125,
+       0.001953125
+      ],
+      "N": 0.00048828125,
+      "S": 0.001953125,
+      "dN": -0.8857421875,
+      "critical": false
+     }
+    }
+   },
+   "d05": {
+    "shared_lr": "3e-3",
+    "objective": 0.679296875,
+    "sensitivity_recovery_ratio_lr": "3e-3",
+    "per_condition_reference": {
+     "LF": "3e-3",
+     "PCL": "3e-3"
+    }
+   },
+   "d10": {
+    "shared_lr": "3e-3",
+    "objective": 0.679296875,
+    "sensitivity_recovery_ratio_lr": "3e-3",
+    "per_condition_reference": {
+     "LF": "3e-3",
+     "PCL": "3e-3"
+    }
+   },
+   "switch_LF": {
+    "keep_main_config": "3e-3",
+    "unconstrained_dev_best": "3e-3"
+   }
+  },
+  "res_grpo": {
+   "table": {
+    "1e-4": {
+     "LF": {
+      "seeds": [
+       "shlockLFpluggrpolr1e4s1",
+       "shlockLFpluggrpolr1e4s2",
+       "shlockLFpluggrpolr1e4s3"
+      ],
+      "N_seeds": [
+       0.87158203125,
+       0.8798828125,
+       0.87744140625
+      ],
+      "S_seeds": [
+       0.5859375,
+       0.58984375,
+       0.546875
+      ],
+      "N": 0.8763020833333334,
+      "S": 0.57421875,
+      "dN": -0.00992838541666663,
+      "critical": false
+     },
+     "PCL": {
+      "seeds": [
+       "pcl1cmpluggrpolr1e4s1",
+       "pcl1cmpluggrpolr1e4s2",
+       "pcl1cmpluggrpolr1e4s3"
+      ],
+      "N_seeds": [
+       0.890625,
+       0.8837890625,
+       0.89501953125
+      ],
+      "S_seeds": [
+       0.70703125,
+       0.71875,
+       0.7265625
+      ],
+      "N": 0.8898111979166666,
+      "S": 0.7174479166666666,
+      "dN": 0.0035807291666666297,
+      "critical": false
+     }
+    },
+    "3e-4": {
+     "LF": {
+      "seeds": [
+       "shlockLFpluggrpos1",
+       "shlockLFpluggrpos2",
+       "shlockLFpluggrpos3"
+      ],
+      "N_seeds": [
+       0.8818359375,
+       0.87548828125,
+       0.87646484375
+      ],
+      "S_seeds": [
+       0.533203125,
+       0.505859375,
+       0.50390625
+      ],
+      "N": 0.8779296875,
+      "S": 0.5143229166666666,
+      "dN": -0.00830078125,
+      "critical": false
+     },
+     "PCL": {
+      "seeds": [
+       "pcl1cmpluggrpos1",
+       "pcl1cmpluggrpos2",
+       "pcl1cmpluggrpos3"
+      ],
+      "N_seeds": [
+       0.89013671875,
+       0.88330078125,
+       0.89453125
+      ],
+      "S_seeds": [
+       0.71875,
+       0.708984375,
+       0.716796875
+      ],
+      "N": 0.8893229166666666,
+      "S": 0.71484375,
+      "dN": 0.0030924479166666297,
+      "critical": false
+     }
+    },
+    "1e-3": {
+     "LF": {
+      "seeds": [
+       "shlockLFpluggrpolr1e3s1",
+       "shlockLFpluggrpolr1e3s2",
+       "shlockLFpluggrpolr1e3s3"
+      ],
+      "N_seeds": [
+       0.8515625,
+       0.85693359375,
+       0.8427734375
+      ],
+      "S_seeds": [
+       0.576171875,
+       0.60546875,
+       0.62109375
+      ],
+      "N": 0.8504231770833334,
+      "S": 0.6009114583333334,
+      "dN": -0.03580729166666663,
+      "critical": false
+     },
+     "PCL": {
+      "seeds": [
+       "pcl1cmpluggrpolr1e3s1",
+       "pcl1cmpluggrpolr1e3s2",
+       "pcl1cmpluggrpolr1e3s3"
+      ],
+      "N_seeds": [
+       0.89111328125,
+       0.8671875,
+       0.869140625
+      ],
+      "S_seeds": [
+       0.7109375,
+       0.734375,
+       0.744140625
+      ],
+      "N": 0.8758138020833334,
+      "S": 0.7298177083333334,
+      "dN": -0.01041666666666663,
+      "critical": false
+     }
+    },
+    "3e-3": {
+     "LF": {
+      "seeds": [
+       "shlockLFpluggrpolr3e3s1",
+       "shlockLFpluggrpolr3e3s2",
+       "shlockLFpluggrpolr3e3s3",
+       "shlockLFpluggrpolr3e3s4",
+       "shlockLFpluggrpolr3e3s5"
+      ],
+      "N_seeds": [
+       0.830078125,
+       0.81884765625,
+       0.78466796875,
+       0.7802734375,
+       0.826171875
+      ],
+      "S_seeds": [
+       0.62890625,
+       0.642578125,
+       0.6796875,
+       0.591796875,
+       0.625
+      ],
+      "N": 0.8080078125,
+      "S": 0.63359375,
+      "dN": -0.07822265625000002,
+      "critical": false
+     },
+     "PCL": {
+      "seeds": [
+       "pcl1cmpluggrpolr3e3s1",
+       "pcl1cmpluggrpolr3e3s2",
+       "pcl1cmpluggrpolr3e3s3",
+       "pcl1cmpluggrpolr3e3s4",
+       "pcl1cmpluggrpolr3e3s5"
+      ],
+      "N_seeds": [
+       0.83544921875,
+       0.84228515625,
+       0.8505859375,
+       0.8505859375,
+       0.7998046875
+      ],
+      "S_seeds": [
+       0.76171875,
+       0.748046875,
+       0.732421875,
+       0.734375,
+       0.759765625
+      ],
+      "N": 0.8357421875,
+      "S": 0.747265625,
+      "dN": -0.050488281250000044,
+      "critical": true
+     }
+    },
+    "1e-2": {
+     "LF": {
+      "seeds": [
+       "shlockLFpluggrpolr1e2s1",
+       "shlockLFpluggrpolr1e2s2",
+       "shlockLFpluggrpolr1e2s3"
+      ],
+      "N_seeds": [
+       0.00048828125,
+       0.00048828125,
+       0.00732421875
+      ],
+      "S_seeds": [
+       0.0,
+       0.0,
+       0.013671875
+      ],
+      "N": 0.0027669270833333335,
+      "S": 0.004557291666666667,
+      "dN": -0.8834635416666666,
+      "critical": false
+     },
+     "PCL": {
+      "seeds": [
+       "pcl1cmpluggrpolr1e2s1",
+       "pcl1cmpluggrpolr1e2s2",
+       "pcl1cmpluggrpolr1e2s3"
+      ],
+      "N_seeds": [
+       0.0,
+       0.0,
+       0.0009765625
+      ],
+      "S_seeds": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "N": 0.0003255208333333333,
+      "S": 0.0,
+      "dN": -0.8859049479166666,
+      "critical": false
+     }
+    }
+   },
+   "d05": {
+    "shared_lr": "1e-3",
+    "objective": 0.6653645833333334,
+    "sensitivity_recovery_ratio_lr": "1e-3",
+    "per_condition_reference": {
+     "LF": "1e-3",
+     "PCL": "1e-3"
+    }
+   },
+   "d10": {
+    "shared_lr": "3e-3",
+    "objective": 0.6904296875,
+    "sensitivity_recovery_ratio_lr": "3e-3",
+    "per_condition_reference": {
+     "LF": "3e-3",
+     "PCL": "3e-3"
+    }
+   },
+   "switch_LF": {
+    "keep_main_config": "1e-3",
+    "unconstrained_dev_best": "3e-3"
+   }
+  }
+ },
+ "missing": []
+}
