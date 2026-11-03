@@ -1,6 +1,10 @@
 # Adapting Pretrained Dexterous Grasping Policies to Deployment Shifts
 
-## Current CSCWD manuscript: v14
+## Current CSCWD manuscript: v15
+
+The [v15 source patch](manuscript/cscwd2027_v15/) restores the audited RFJ3 rank correlation to the abstract. It changes only that clause in v14 and preserves all data, figures, tables and typography.
+
+## CSCWD manuscript v14 (previous)
 
 The [v14 source patch](manuscript/cscwd2027_v14/) uses the supplied v13 and leads with compact correction as a capacity baseline for reference-lock recovery. [Source checks and figure provenance](extensions/cscwd2027_1102/review_v14/) support its short reporting protocol and development-loss calculations. Tables, tests and original observations are preserved.
 
