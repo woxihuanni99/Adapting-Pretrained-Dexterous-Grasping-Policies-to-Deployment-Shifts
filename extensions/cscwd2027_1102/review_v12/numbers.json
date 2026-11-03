@@ -1,0 +1,179 @@
+{
+  "source": "analysis/numbers.json",
+  "source_SHA256": "e9bad131e59ca665b632623c14dbde5593aa9cc6a251566336c1be2b429c6ca8",
+  "reference_runs": 51,
+  "available_groups": 15,
+  "group_coverage": [
+    {
+      "group": "rgLF",
+      "scheme": "res_grpo",
+      "rate": "1e-3",
+      "n": 3
+    },
+    {
+      "group": "rg3LF",
+      "scheme": "res_grpo",
+      "rate": "3e-3",
+      "n": 5
+    },
+    {
+      "group": "rpLF",
+      "scheme": "res_ppo",
+      "rate": "3e-3",
+      "n": 5
+    },
+    {
+      "group": "fgLF1em5",
+      "scheme": "full_grpo",
+      "rate": "1e-5",
+      "n": 3
+    },
+    {
+      "group": "fgLF3em5",
+      "scheme": "full_grpo",
+      "rate": "3e-5",
+      "n": 3
+    },
+    {
+      "group": "fgLF1em4",
+      "scheme": "full_grpo",
+      "rate": "1e-4",
+      "n": 3
+    },
+    {
+      "group": "fpLF1em5",
+      "scheme": "full_ppo",
+      "rate": "1e-5",
+      "n": 3
+    },
+    {
+      "group": "fpLF3em5",
+      "scheme": "full_ppo",
+      "rate": "3e-5",
+      "n": 5
+    },
+    {
+      "group": "cstLF",
+      "scheme": "cst",
+      "rate": "3e-2",
+      "n": 3
+    },
+    {
+      "group": "bxrLF3em3",
+      "scheme": "bias_raw",
+      "rate": "3e-3",
+      "n": 3
+    },
+    {
+      "group": "bxrLF1em2",
+      "scheme": "bias_raw",
+      "rate": "1e-2",
+      "n": 3
+    },
+    {
+      "group": "bxrLF3em2",
+      "scheme": "bias_raw",
+      "rate": "3e-2",
+      "n": 3
+    },
+    {
+      "group": "bxsLF1em2",
+      "scheme": "bias_sigma",
+      "rate": "1e-2",
+      "n": 3
+    },
+    {
+      "group": "bxsLF3em2",
+      "scheme": "bias_sigma",
+      "rate": "3e-2",
+      "n": 3
+    },
+    {
+      "group": "bxsLF1em1",
+      "scheme": "bias_sigma",
+      "rate": "1e-1",
+      "n": 3
+    }
+  ],
+  "spearman_RFJ3_success": 0.9654298642533936,
+  "spearman_whole_shift_success": 0.40660633484162895,
+  "correlation_scope": "Pooled available diagnostic checkpoints, not every learning rate or a causal RFJ3 intervention.",
+  "retrained_75_runs": [
+    {
+      "group": "rgLF75",
+      "run": "rgLF75_s1",
+      "RFJ3_rad": 0.0991174789936772,
+      "success_pct": 42.52570921985816
+    },
+    {
+      "group": "rgLF75",
+      "run": "rgLF75_s2",
+      "RFJ3_rad": 0.6810578145082623,
+      "success_pct": 37.2854609929078
+    },
+    {
+      "group": "rgLF75",
+      "run": "rgLF75_s3",
+      "RFJ3_rad": 0.3142900535831182,
+      "success_pct": 43.43484042553192
+    },
+    {
+      "group": "rpLF75",
+      "run": "rpLF75_s1",
+      "RFJ3_rad": -0.06493703489051522,
+      "success_pct": 40.527925531914896
+    },
+    {
+      "group": "rpLF75",
+      "run": "rpLF75_s2",
+      "RFJ3_rad": -0.06596109110150017,
+      "success_pct": 39.33333333333333
+    },
+    {
+      "group": "rpLF75",
+      "run": "rpLF75_s3",
+      "RFJ3_rad": 0.5308330141706379,
+      "success_pct": 43.100620567375884
+    },
+    {
+      "group": "fgLF75",
+      "run": "fgLF75_s1",
+      "RFJ3_rad": 0.05102805224359669,
+      "success_pct": 39.79255319148936
+    },
+    {
+      "group": "fgLF75",
+      "run": "fgLF75_s2",
+      "RFJ3_rad": 0.04438667422061398,
+      "success_pct": 43.95656028368794
+    },
+    {
+      "group": "fgLF75",
+      "run": "fgLF75_s3",
+      "RFJ3_rad": 0.042811549353152234,
+      "success_pct": 41.92686170212766
+    },
+    {
+      "group": "fpLF75",
+      "run": "fpLF75_s1",
+      "RFJ3_rad": 0.06159924720141589,
+      "success_pct": 44.36923758865248
+    },
+    {
+      "group": "fpLF75",
+      "run": "fpLF75_s2",
+      "RFJ3_rad": 0.07426717588192525,
+      "success_pct": 42.255319148936174
+    },
+    {
+      "group": "fpLF75",
+      "run": "fpLF75_s3",
+      "RFJ3_rad": 0.01718051167851218,
+      "success_pct": 42.85992907801418
+    }
+  ],
+  "sigma_RFJ3": 0.5558702945709229,
+  "constant_RFJ3_fraction": 0.6628930839917991,
+  "new_training": 0,
+  "new_simulation": 0
+}
